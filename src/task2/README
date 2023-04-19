@@ -1,0 +1,57 @@
+README
+
+Sample output of the program
+
+C:\Users\adhvi\.jdks\openjdk-20\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\lib\idea_rt.jar=60279:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Documents\solvd\intellij\Airport-project\out\production\Airport-project task2.Main
+AIRPORT: ---------------------------
+AIRPORT: Project AIRPORT
+AIRPORT: ---------------------------
+AIRPORT: Airport Details
+AIRPORT: { airportName : SFO cityName :San Francisco area :UnitedStates The open status of Airport :true}
+AIRPORT: ---------------------------
+AIRPORT: ---------------------------
+AIRPORT: Runway status TAKEOFF
+AIRPORT: ---------------------------
+AIRPORT: Welcome to Singapore Airlines!!
+AIRPORT: My Menu [Veg pasta - 40$, Non-veg pasta - 55$]
+AIRPORT: OFFERS : Sorry! no offers at the moment
+AIRPORT: ---------------------------
+AIRPORT: Welcome to United Airlines!!
+AIRPORT: My Menu [Veg Burger - 30$, Non-veg Burger - 55$]
+AIRPORT: OFFERS: Sorry! no offers at the moment
+AIRPORT: ---------------------------
+AIRPORT: Welcome to South West Airlines!!
+AIRPORT: OFFERS: Seasonal Offer : 40% off on meal
+AIRPORT: My Menu [Veg Pizza - 130$, Non-veg Pizza - 145$]
+AIRPORT: ---------------------------
+AIRPORT: Validating Address
+AIRPORT: ---------------------------
+AIRPORT: Passenger Name : Ranco
+AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-ALTotal number of luggages are :2}
+AIRPORT: Assocaited Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-ALTotal number of luggages are :2}
+AIRPORT: ---------------------------
+AIRPORT: Validating Ticket Counter
+AIRPORT: ---------------------------
+AIRPORT: details are : {ticketId :ARE1234 The travel source location is :SFO The travel destination is :Australia The passengerId is: Ranco flight Id is :UN-AL}
+AIRPORT: {ticketId :ARE1234 The travel source location is :SFO The travel destination is :Australia The passengerId is: Ranco flight Id is :UN-AL}
+AIRPORT: ---------------------------
+AIRPORT: Validating Routes
+AIRPORT: ---------------------------
+AIRPORT: source : SFO/destination : AUSTRALIA/noOfFlights : 10
+AIRPORT: Name : Nancy
+AIRPORT: Age : 23
+AIRPORT: employee id is :null
+AIRPORT: Employee salary is :65000.0
+AIRPORT: Designation of the employee is:CARGO_MANAGER
+AIRPORT: Address :task2.person.Address@5d099f62
+AIRPORT: Gender : FEMALE
+AIRPORT: Designation : CARGO_MANAGER
+AIRPORT: ---------------------------
+AIRPORT: Runway status
+AIRPORT: ---------------------------
+a plane is taking off!
+Nothing is going on the runway!
+A plane is landing!
+AIRPORT: ---------------------------
+
+Process finished with exit code 0
