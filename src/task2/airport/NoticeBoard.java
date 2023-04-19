@@ -1,14 +1,17 @@
-package com.airport;
+package task2.airport;
 
 public class NoticeBoard {
     Flight flightDetails;
-    public NoticeBoard(){
+
+    public NoticeBoard() {
     }
-    public void setFlightDetails(Flight flightDetails){
+
+    public void setFlightDetails(Flight flightDetails) {
         this.flightDetails = flightDetails;
         return;
     }
-    public void printFlightDetails(){
+
+    public void printFlightDetails() {
         System.out.println("flightID : " + flightDetails.getFlightId());
         System.out.println("flightName : " + flightDetails.getFlightName());
         System.out.println("flightSource : " + flightDetails.getSource());

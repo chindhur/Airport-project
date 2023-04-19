@@ -1,11 +1,10 @@
-package com.airport;
+package task2.airport;
 
-import com.utils.Printer;
+import task2.utils.Printer;
 
 public class TicketCounter {
     private String ticketId;
     private String source;
-
     private String destination;
 
     private float price;
@@ -87,12 +86,12 @@ public class TicketCounter {
     /**
      * Gets Ticket details
      */
-    public String getTicketDetails() {
+    public String getDetails() {
         String details = "{ticketId :" + ticketId +
-                "The travel source location is :" + source +
-                "The travel destination is :" + destination +
-                "The passengerId is: " + passengerId +
-                "flight Id is :" + flightId + "}";
+                " The travel source location is :" + source +
+                " The travel destination is :" + destination +
+                " The passengerId is: " + passengerId +
+                " flight Id is :" + flightId + "}";
         Printer.print("details are : " + details);
         return details;
     }

@@ -1,8 +1,8 @@
-package com.airport;
+package task2.airport;
 
-import com.utils.Printer;
+import task2.utils.Printer;
 
-class Luggage {
+public class Luggage {
     private String flightId;
     private String luggageId;
     private String passengerId;
@@ -25,19 +25,6 @@ class Luggage {
         this.flightId = flightId;
     }
 
-    public void setLuggageId(String luggageId) {
-        this.luggageId = luggageId;
-    }
-
-    public void setPassengerId(String passengerId) {
-        this.passengerId = passengerId;
-    }
-
-    public void setNoOfLuggages(Integer noOfLuggages) {
-        this.noOfLuggages = noOfLuggages;
-    }
-
-
     /*method to get luggagedetails*/
     public String getLuggageDetails() {
         String details = "{ " +
@@ -54,11 +41,23 @@ class Luggage {
         return luggageId;
     }
 
+    public void setLuggageId(String luggageId) {
+        this.luggageId = luggageId;
+    }
+
     public String getPassengerId() {
         return passengerId;
     }
 
+    public void setPassengerId(String passengerId) {
+        this.passengerId = passengerId;
+    }
+
     public Integer getNoOfLuggages() {
         return noOfLuggages;
+    }
+
+    public void setNoOfLuggages(Integer noOfLuggages) {
+        this.noOfLuggages = noOfLuggages;
     }
 }

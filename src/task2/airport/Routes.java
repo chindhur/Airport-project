@@ -1,16 +1,16 @@
-package com.airport;
+package task2.airport;
 
-import com.utils.Printer;
+import task2.utils.Printer;
 
 public class Routes {
     private String source;
     private String destination;
-    private String noOfFlights;
+    private int noOfFlights;
 
     public Routes() {
     }
 
-    public Routes(String source, String destination, String noOfFlights) {
+    public Routes(String source, String destination, int noOfFlights) {
         this.source = source;
         this.destination = destination;
         this.noOfFlights = noOfFlights;
@@ -33,15 +33,15 @@ public class Routes {
         this.destination = destination;
     }
 
-    public String getNoOfFlights() {
+    public int getNoOfFlights() {
         return noOfFlights;
     }
 
-    public void setNoOfFlights(String noOfFlights) {
+    public void setNoOfFlights(int noOfFlights) {
         this.noOfFlights = noOfFlights;
     }
 
-    public String getDetails(){
+    public String getDetails() {
         String details = "source : " + source + "/" +
                 "destination : " + destination + "/" +
                 "noOfFlights : " + noOfFlights;

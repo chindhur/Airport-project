@@ -1,7 +1,7 @@
-package com.airport;
+package task2.airport;
 
-import com.person.Person;
-import com.utils.Printer;
+import task2.person.Person;
+import task2.utils.Printer;
 
 public class Passenger {
     Person passenger;
@@ -32,8 +32,19 @@ public class Passenger {
         this.luggage = luggage;
     }
 
-    public void getDetails(){
-        Printer.print(passenger.getName());
-        Printer.print(luggage.getLuggageDetails());
+    public void getDetails() {
+        Printer.print("Passenger Name : " + passenger.getName());
+        Printer.print("Assocaited Luggage " + luggage.getLuggageDetails());
+    }
+
+    public String toString() {
+        // return string name of flight
+        return passenger.getName();
+    }
+
+    public int hashCode() {
+        // return flightId as hashCode as it is unique
+        // per object
+        return Integer.valueOf(passenger.getName());
     }
 }
