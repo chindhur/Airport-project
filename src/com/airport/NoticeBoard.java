@@ -3,6 +3,7 @@ package com.airport;
 import com.utils.Printer;
 
 public final class NoticeBoard {
+
     Flight flightDetails;
 
     public void setFlightDetails(Flight flightDetails) {

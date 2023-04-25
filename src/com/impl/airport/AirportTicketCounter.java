@@ -4,39 +4,50 @@ import com.airport.ITicketCounter;
 import com.utils.Printer;
 
 public class AirportTicketCounter implements ITicketCounter {
+
     private String ticketId;
     private String source;
     private String destination;
     private float price;
     private String passengerId;
     private String flightId;
+
     public String getTicketId() {
         return ticketId;
     }
+
     public void setTicketId(String ticketId) {
         this.ticketId = ticketId;
     }
+
     public String getSource() {
         return source;
     }
+
     public void setSource(String source) {
         this.source = source;
     }
+
     public String getDestination() {
         return destination;
     }
+
     public void setDestination(String destination) {
         this.destination = destination;
     }
+
     public String getPassengerId() {
         return passengerId;
     }
+
     public void setPassengerId(String passengerId) {
         this.passengerId = passengerId;
     }
+
     public String getFlightId() {
         return flightId;
     }
+
     public void setFlightId(String flightId) {
         this.flightId = flightId;
     }
@@ -59,13 +70,14 @@ public class AirportTicketCounter implements ITicketCounter {
             Printer.print("Invalid value supplied");
         }
         this.source = source;
-        this.ticketId= ticketId;
+        this.ticketId = ticketId;
         this.destination = destination;
         this.passengerId = passengerId;
-        this.price=price;
-        this.flightId=flightId;
+        this.price = price;
+        this.flightId = flightId;
 
     }
+
     public float getPrice() {
         return price;
     }
@@ -79,10 +91,9 @@ public class AirportTicketCounter implements ITicketCounter {
                 " The travel source location is :" + source + System.lineSeparator() +
                 " The travel destination is :" + destination + System.lineSeparator() +
                 " The passengerId is: " + passengerId + System.lineSeparator() +
-                " flight Id is :" + flightId ;
+                " flight Id is :" + flightId;
         return details;
     }
-
 
 
 }

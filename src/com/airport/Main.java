@@ -1,15 +1,13 @@
 package com.airport;
 
-import java.util.List;
-import com.airport.*;
 import com.impl.airport.*;
-import com.airport.SFORoute;
-import com.utils.FoodMenu;
 import com.person.Address;
 import com.person.Designation;
 import com.person.Gender;
 import com.person.Person;
+import com.utils.FoodMenu;
 import com.utils.Printer;
+import java.util.List;
 
 public class Main {
 
@@ -34,7 +32,7 @@ public class Main {
         salFlight.getWelcomeMessage();
         menuList = salFlight.getMenu();
         Printer.print("Listing Menu and price: ");
-        for (FoodMenu menu : menuList){
+        for (FoodMenu menu : menuList) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
         salFlight.getDiscount();
@@ -44,7 +42,7 @@ public class Main {
         unitedFlight.getWelcomeMessage();
         menuList = unitedFlight.getMenu();
         Printer.print("Listing Menu and price: ");
-        for (FoodMenu menu : menuList){
+        for (FoodMenu menu : menuList) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
         unitedFlight.getDiscount();
@@ -55,7 +53,7 @@ public class Main {
         southwestFlight.getDiscount();
         menuList = southwestFlight.getMenu();
         Printer.print("Listing Menu and price: ");
-        for (FoodMenu menu : menuList){
+        for (FoodMenu menu : menuList) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
         Printer.print("---------------------------");
@@ -65,8 +63,8 @@ public class Main {
         emiratesAirlines.getDiscount();
         menuList = emiratesAirlines.getMenu();
         Printer.print("Listing Menu and price");
-        for(FoodMenu menu : menuList){
-            Printer.print("Item name : " + menu.getItemName() + "--------------"+ menu.getItemPrice());
+        for (FoodMenu menu : menuList) {
+            Printer.print("Item name : " + menu.getItemName() + "--------------" + menu.getItemPrice());
         }
         Printer.print("-----------------------------");
 
@@ -82,24 +80,24 @@ public class Main {
         Printer.print("Validating Ticket Counter");
         Printer.print("---------------------------");
         AirportTicketCounter ticketCounter = new AirportTicketCounter();
-        ticketCounter.bookTicket("1234","Malaysia","Singapore",1200,"456","ES-AL");
+        ticketCounter.bookTicket("1234", "Malaysia", "Singapore", 1200, "456", "ES-AL");
         ticketCounter.getTicketId();
         ticketCounter.getPassengerId();
         ticketCounter.setFlightId("ES-AL");
         ticketCounter.setPrice(1200);
         ticketCounter.setPassengerId("456");
         ticketCounter.setTicketId("1234");
-        Printer.print("The Details are :" + ticketCounter.getDetails() );
+        Printer.print("The Details are :" + ticketCounter.getDetails());
         Printer.print("---------------------------");
 
         Printer.print("Validating Routes for SFORoute");
         Printer.print("---------------------------");
-        SFORoute sfoRoute = new SFORoute("India",5);
+        SFORoute sfoRoute = new SFORoute("India", 5);
         sfoRoute.getSource();
-        Printer.print("The source is: "+ sfoRoute.getSource());
+        Printer.print("The source is: " + sfoRoute.getSource());
         sfoRoute.getDestination();
         sfoRoute.setDestination("India");
-        Printer.print("The destination is:"+ sfoRoute.getDestination());
+        Printer.print("The destination is:" + sfoRoute.getDestination());
         sfoRoute.getNoOfFlights();
         Printer.print(sfoRoute.getNoOfFlights());
         sfoRoute.setNoOfFlights(15);
@@ -112,7 +110,7 @@ public class Main {
         AirportEmployee airportEmployee = new AirportEmployee("Nancy");
         AirportEmployee airportEmployee2 = new AirportEmployee("Stacy");
         AirportEmployee airportEmployee3 = new AirportEmployee("fariah",
-                45,address,Gender.FEMALE,"5678",67000.0,Designation.MANAGER,"SFO");
+                45, address, Gender.FEMALE, "5678", 67000.0, Designation.MANAGER, "SFO");
         airportEmployee.setAge(23);
         airportEmployee.setAddress(address);
         airportEmployee.setGender(Gender.FEMALE);
@@ -123,9 +121,9 @@ public class Main {
         Printer.print("---------------------------");
         Printer.print("Validating for Airplane Employee");
         Printer.print("---------------------------");
-        AirplaneEmployee airplaneEmployee = new AirplaneEmployee("Tom", 45, address , Gender.MALE,
-               "abcd" ,75000.0, Designation.MANAGER,"SingaporeAirlines"
-                );
+        AirplaneEmployee airplaneEmployee = new AirplaneEmployee("Tom", 45, address, Gender.MALE,
+                "abcd", 75000.0, Designation.MANAGER, "SingaporeAirlines"
+        );
         airportEmployee.printDetails();
         airplaneEmployee.getAssignedAirplane();
 

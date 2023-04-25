@@ -1,7 +1,7 @@
 package com.airport;
 
-import com.utils.Printer;
 import com.person.IItem;
+import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +26,7 @@ public final class Luggage implements IItem {
         items.add(item);
     }
 
-    public void removeItem(String item){
+    public void removeItem(String item) {
         items.remove(item);
     }
 

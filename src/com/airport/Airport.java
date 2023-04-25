@@ -1,8 +1,6 @@
 package com.airport;
 
 import com.utils.Printer;
-
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +63,7 @@ public class Airport {
 
     }
 
-    public List<AirportEmployee> getAirportEmployeeList(){
+    public List<AirportEmployee> getAirportEmployeeList() {
         return airportEmployeeList;
     }
 

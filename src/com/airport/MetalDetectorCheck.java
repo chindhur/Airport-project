@@ -4,6 +4,7 @@ import com.utils.Printer;
 
 public class MetalDetectorCheck implements ISecurityCheck {
     private Boolean isThreatDetected;
+
     @Override
     public void scanForSecurity(Passenger passenger) {
         if (passenger.hasMetalObject()) {

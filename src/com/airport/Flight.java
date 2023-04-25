@@ -1,8 +1,7 @@
 package com.airport;
 
-import com.utils.Printer;
 import com.utils.FoodMenu;
-
+import com.utils.Printer;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;

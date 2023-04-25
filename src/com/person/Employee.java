@@ -2,13 +2,14 @@ package com.person;
 
 import com.utils.Printer;
 import java.util.Objects;
+
 public class Employee extends Person {
 
     private String employeeId;
     private Double employeeSalary;
     private Designation designation;
 
-    public Employee(String name){
+    public Employee(String name) {
         super(name);
     }
 

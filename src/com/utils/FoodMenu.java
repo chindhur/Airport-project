@@ -1,6 +1,7 @@
 package com.utils;
 
 public class FoodMenu {
+
     Boolean isVeg = false;
     String itemName = "";
     Integer itemPrice = 0;

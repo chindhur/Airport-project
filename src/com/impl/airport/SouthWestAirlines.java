@@ -3,12 +3,13 @@ package com.impl.airport;
 import com.airport.Flight;
 import com.utils.FoodMenu;
 import com.utils.Printer;
+
 import java.sql.Timestamp;
 
 
 public class SouthWestAirlines extends Flight {
 
-    static{
+    static {
 
         Printer.print("Have a Nice and Happy Journey with SouthWest Airlines");
     }

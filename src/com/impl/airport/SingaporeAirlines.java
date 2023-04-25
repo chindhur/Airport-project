@@ -6,7 +6,7 @@ import com.utils.Printer;
 
 public class SingaporeAirlines extends Flight {
 
-    static{
+    static {
 
         Printer.print("Have a Nice and Happy Journey with SingaporeAirlines");
     }
@@ -15,7 +15,7 @@ public class SingaporeAirlines extends Flight {
 
         super.setFlightName("Singapore Airlines");
         super.setFlightId("SP-AL");
-         price = 2000.00;
+        price = 2000.00;
         source = "Japan";
         destination = "United_States";
         menuList.add(new FoodMenu(true, "Veg Fried Rice", 15));

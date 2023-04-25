@@ -9,7 +9,7 @@ import java.util.List;
 public class UnitedAirlines extends Flight {
     List<FoodMenu> menuList = new ArrayList<FoodMenu>();
 
-    static{
+    static {
 
         Printer.print("Have a Nice and Happy Journey with United Airlines");
     }

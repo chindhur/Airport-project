@@ -1,12 +1,12 @@
 package com.impl.airport;
 
 import com.airport.Flight;
-import com.utils.Printer;
 import com.utils.FoodMenu;
+import com.utils.Printer;
 
-public class EmiratesAirlines extends Flight  {
+public class EmiratesAirlines extends Flight {
 
-    static{
+    static {
 
         Printer.print("Have a Nice and Happy Journey with Emirates Airlines");
     }
