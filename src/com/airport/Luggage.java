@@ -30,11 +30,8 @@ public final class Luggage implements Item{
     }
 
     public Boolean hasMetalObject() {
-        if (items.contains("metal")) {
-            return true;
-        } else {
-            return false;
-        }
+        return items.contains("metal");
+    }
     }
 
 
