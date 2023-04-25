@@ -6,6 +6,7 @@ import com.utils.Printer;
 public class ExplosiveDetectorCheck implements ISecurityCheck {
 
     private Boolean isThreatDetected;
+    
     public void scanForSecurity(Passenger passenger){
         if(passenger.hasExplosiveObject()){
             Printer.print("This passenger has explosives");
