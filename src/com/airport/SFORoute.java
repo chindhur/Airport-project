@@ -1,13 +1,12 @@
-package com.impl.airport.route;
+package com.airport;
 
-import com.airport.Route;
-import com.utils.Printer;
+public class SFORoute implements IRoute {
 
-public class SFORoute implements Route {
     private final String SOURCE = "SFO";
     private String destination;
     private int noOfFlights;
-    public SFORoute( String destination, int noOfFlights) {
+
+    public SFORoute(String destination, int noOfFlights) {
         this.destination = destination;
         this.noOfFlights = noOfFlights;
     }

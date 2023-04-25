@@ -1,6 +1,7 @@
 package com.person;
 
 public class Address {
+
     private String street;
     private String city;
     private String state;
@@ -8,7 +9,6 @@ public class Address {
     private String country;
 
     /*constructor*/
-
     public Address(String street, String city, String state, String zipcode, String country) {
         this.street = street;
         this.city = city;
@@ -32,24 +32,31 @@ public class Address {
     public void setCity(String city) {
         this.city = city;
     }
+
     public String getState() {
         return state;
     }
+
     public void setState(String state) {
         this.state = state;
     }
+
     public String getCountry() {
         return country;
     }
+
     public void setCountry(String country) {
         this.country = country;
     }
+
     public String getZipcode() {
         return zipcode;
     }
+
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
     }
+
     public String getaddress() {
         return "Address{" +
                 "street:" + street +

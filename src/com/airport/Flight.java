@@ -2,34 +2,34 @@ package com.airport;
 
 import com.utils.Printer;
 import com.utils.FoodMenu;
+
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Flight {
+
     protected static String flightId;
     protected static String flightName;
+    private static Integer noOfWings;
+
+    static {
+
+        noOfWings = 2;
+        Printer.print("Initialized number of wings in static block");
+    }
+
+    private final Integer NO_OF_WHEELS = 18;
     protected String source;
     protected String destination;
     protected Double price;
+    protected List<FoodMenu> menuList = new ArrayList<FoodMenu>();
     private Timestamp arrivalTime;
     private Timestamp departureTime;
-    protected List<FoodMenu> menuList = new ArrayList<FoodMenu>();
-    private final Integer NO_OF_WHEELS = 18;
-    private static Integer noOfWings;
 
-
-    static {
-        noOfWings = 2;
-        Printer. print("Initialized number of wings in static block");
-    }
     /*constructors*/
     /* Empty constructor required here to avoid compilation errors */
     public Flight() {
-    }
-
-    public final Integer getNoOfWheels(){
-        return NO_OF_WHEELS;
     }
 
     public Flight(String flightId, String flightName,
@@ -44,6 +44,10 @@ public abstract class Flight {
         this.price = price;
     }
 
+    public final Integer getNoOfWheels() {
+        return NO_OF_WHEELS;
+    }
+
     /*Abstract methods*/
     public abstract Integer getDiscount();
 
@@ -54,9 +58,10 @@ public abstract class Flight {
     public abstract Double getPrice();
 
     /* Default methods */
-    public List<FoodMenu> getMenu(){
+    public List<FoodMenu> getMenu() {
         return menuList;
-    };
+    }
+
     public String getFlightName() {
         return flightName;
     }
@@ -143,7 +148,6 @@ public abstract class Flight {
         if (!this.flightId.equals(other.flightId)) {
             return false;
         }
-
         return true;
     }
 
@@ -154,5 +158,4 @@ public abstract class Flight {
         hash = 53 * hash + this.flightId.hashCode();
         return hash;
     }
-
 }

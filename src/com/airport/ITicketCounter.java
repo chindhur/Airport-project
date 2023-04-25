@@ -1,8 +1,7 @@
 package com.airport;
 
-import com.utils.Printer;
+public interface ITicketCounter {
 
-public interface TicketCounter {
     public String getTicketId();
 
     public void setTicketId(String ticketId);
@@ -22,7 +21,6 @@ public interface TicketCounter {
     public String getFlightId();
 
     public void setFlightId(String flightId);
-
 
     public void bookTicket(String ticketId, String source,
                            String destination, float price,

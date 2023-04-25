@@ -5,8 +5,11 @@ import com.person.Designation;
 import com.person.Employee;
 import com.person.Gender;
 import com.utils.Printer;
+
 public class AirplaneEmployee extends Employee {
+
     private String assignedAirplane = "Not Assigned";
+
     public AirplaneEmployee(String name, Integer age, Address address, Gender gender,
                             String employeeId, Double employeeSalary, Designation designation,
                             String assignedAirplane) {
@@ -19,6 +22,7 @@ public class AirplaneEmployee extends Employee {
         return assignedAirplane;
 
     }
+
     public void setAssignedAirplane(String assignedAirplane) {
         this.assignedAirplane = assignedAirplane;
     }

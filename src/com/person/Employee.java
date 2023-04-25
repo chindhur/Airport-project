@@ -3,6 +3,7 @@ package com.person;
 import com.utils.Printer;
 import java.util.Objects;
 public class Employee extends Person {
+
     private String employeeId;
     private Double employeeSalary;
     private Designation designation;
@@ -10,6 +11,7 @@ public class Employee extends Person {
     public Employee(String name){
         super(name);
     }
+
     public Employee(String name, String employeeId, Double employeeSalary, Designation designation) {
         super(name);
         this.employeeId = employeeId;
@@ -34,18 +36,23 @@ public class Employee extends Person {
         Printer.print("Gender : " + super.getGender());
         Printer.print("Designation : " + designation.toString());
     }
+
     public String getEmployeeId() {
         return employeeId;
     }
+
     public void setEmployeeId(String employeeId) {
         this.employeeId = employeeId;
     }
+
     public Double getEmployeeSalary() {
         return employeeSalary;
     }
+
     public void setEmployeeSalary(Double employeeSalary) {
         this.employeeSalary = employeeSalary;
     }
+
     public Designation getDesignation() {
         return designation;
     }
@@ -53,6 +60,7 @@ public class Employee extends Person {
     public void setDesignation(Designation designation) {
         this.designation = designation;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -63,6 +71,7 @@ public class Employee extends Person {
                 && Objects.equals(employeeSalary, employee.employeeSalary)
                 && designation == employee.designation;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), employeeId, employeeSalary, designation);

@@ -7,17 +7,25 @@ import com.person.Gender;
 import com.utils.Printer;
 
 public class AirportEmployee extends Employee {
-    Airport mAirport = null;
 
-    public AirportEmployee(Airport airport,String name){
+    String airportName = null;
+
+    public AirportEmployee(String name) {
         super(name);
-        mAirport = airport;
+    }
 
+    public AirportEmployee(String name, Integer age, Address address, Gender gender,
+                           String employeeId, Double employeeSalary, Designation designation,
+                           String assignedAirport) {
+        super(name, age, address, gender, employeeId, employeeSalary, designation);
+        airportName = assignedAirport;
     }
-    public void setAirport(Airport airport) {
-        mAirport = airport;
+
+    public void setAirport(String airport) {
+        airportName = airport;
     }
+
     public String getAssignedAirport() {
-        return mAirport.getAirportName();
+        return airportName;
     }
 }

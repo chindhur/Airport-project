@@ -1,6 +1,7 @@
 package com.airport;
 
-public interface Route {
+public interface IRoute {
+
     public String getSource();
 
     public String getDestination();

@@ -1,9 +1,9 @@
 package com.impl.airport;
 
-import com.airport.TicketCounter;
+import com.airport.ITicketCounter;
 import com.utils.Printer;
 
-public class AirportTicketCounter implements TicketCounter {
+public class AirportTicketCounter implements ITicketCounter {
     private String ticketId;
     private String source;
     private String destination;
@@ -75,11 +75,11 @@ public class AirportTicketCounter implements TicketCounter {
     }
 
     public String getDetails() {
-        String details = "{ticketId :" + ticketId + System.lineSeparator() +
+        String details = "ticketId :" + ticketId + System.lineSeparator() +
                 " The travel source location is :" + source + System.lineSeparator() +
                 " The travel destination is :" + destination + System.lineSeparator() +
                 " The passengerId is: " + passengerId + System.lineSeparator() +
-                " flight Id is :" + flightId + "}";
+                " flight Id is :" + flightId ;
         return details;
     }
 

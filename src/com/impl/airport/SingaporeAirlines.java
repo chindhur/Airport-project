@@ -7,9 +7,12 @@ import com.utils.Printer;
 public class SingaporeAirlines extends Flight {
 
     static{
+
         Printer.print("Have a Nice and Happy Journey with SingaporeAirlines");
     }
+
     public SingaporeAirlines() {
+
         super.setFlightName("Singapore Airlines");
         super.setFlightId("SP-AL");
          price = 2000.00;

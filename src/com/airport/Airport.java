@@ -2,39 +2,54 @@ package com.airport;
 
 import com.utils.Printer;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Airport {
+
     private String airportName;
     private String cityName;
     private String area;
-    private Boolean mIsOpen = true;
+    private Boolean IsRunwayOPen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
+    private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
+    private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
     /*constructor*/
-    public Airport(String airportName, String cityName, String area, Boolean mIsOpen) {
+    public Airport(String airportName, String cityName, String area, Boolean IsRunwayOPen) {
         this.airportName = airportName;
         this.cityName = cityName;
         this.area = area;
-        this.mIsOpen = mIsOpen;
+        this.IsRunwayOPen = IsRunwayOPen;
     }
 
     public RunwayStatus getRunway() {
         return runway;
     }
 
-    public void setRunway(RunwayStatus runway) {
-        this.runway = runway;
+    public List<AirplaneEmployee> getAirplaneEmployeeList() {
+        return airplaneEmployeeList;
+    }
+
+    public void setAirplaneEmployeeList(List<AirplaneEmployee> airplaneEmployeeList) {
+        this.airplaneEmployeeList = airplaneEmployeeList;
+    }
+
+    public void setRunway(RunwayStatus runwayIn) {
+        runway = runwayIn;
     }
 
     public Boolean getOpenStatus() {
-        return mIsOpen;
+        return IsRunwayOPen;
     }
 
     public void setOpenStatus(Boolean isOpen) {
-        if (mIsOpen) {
+        if (IsRunwayOPen) {
             Printer.print("The airport is open");
         }
 
-        mIsOpen = isOpen;
+        IsRunwayOPen = isOpen;
     }
 
     public String getDetails() {
@@ -43,11 +58,19 @@ public class Airport {
                         "airportName : " + airportName +
                         " cityName :" + cityName +
                         " area :" + area +
-                        " The open status of Airport :" + mIsOpen
+                        " The open status of Airport :" + IsRunwayOPen
                         + "}";
         Printer.print(flight);
         return flight;
 
+    }
+
+    public List<AirportEmployee> getAirportEmployeeList(){
+        return airportEmployeeList;
+    }
+
+    public void setAirportEmployeeList(List<AirportEmployee> airportEmployeeList) {
+        this.airportEmployeeList = airportEmployeeList;
     }
 
     public String getCityName() {
@@ -102,6 +125,7 @@ public class Airport {
 
         return true;
     }
+
     @Override
     public int hashCode() {
         int hash = 5;
@@ -109,5 +133,4 @@ public class Airport {
         hash = 53 * hash + this.area.hashCode();
         return hash;
     }
-
 }

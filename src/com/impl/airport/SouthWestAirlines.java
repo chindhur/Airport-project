@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 public class SouthWestAirlines extends Flight {
 
     static{
+
         Printer.print("Have a Nice and Happy Journey with SouthWest Airlines");
     }
 
@@ -33,7 +34,6 @@ public class SouthWestAirlines extends Flight {
     }
 
     /*Abstract method implementation */
-
     public Integer getDiscount() {
         Printer.print("OFFERS: Seasonal Offer : 40% off on meal");
         return 0;

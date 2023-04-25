@@ -2,13 +2,14 @@ package com.airport;
 
 import com.person.Person;
 import com.utils.Printer;
-import com.person.Item;
+import com.person.IItem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Passenger implements Item {
-    Person passenger;
-    Luggage luggage;
+public class Passenger implements IItem {
+
+    private Person passenger;
+    private Luggage luggage;
     private List<String> items;
 
     public Passenger(Person passenger, Luggage luggage) {
@@ -27,19 +28,11 @@ public class Passenger implements Item {
     }
 
     public Boolean hasMetalObject() {
-        if (items.contains("metal")) {
-            return true;
-        } else {
-            return false;
-        }
+        return (items.contains("metal"));
     }
 
     public Boolean hasExplosiveObject() {
-        if (items.contains("explosive")) {
-            return true;
-        } else {
-            return false;
-        }
+        return (items.contains("explosive"));
     }
 
     public Person getPassenger() {

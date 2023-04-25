@@ -8,6 +8,7 @@ public final class NoticeBoard {
     public void setFlightDetails(Flight flightDetails) {
         this.flightDetails = flightDetails;
     }
+
     public void printDetails() {
         Printer.print("flightID : " + flightDetails.getFlightId());
         Printer.print("flightName : " + flightDetails.getFlightName());

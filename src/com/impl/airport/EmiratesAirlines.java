@@ -4,12 +4,15 @@ import com.airport.Flight;
 import com.utils.Printer;
 import com.utils.FoodMenu;
 
-public class Emirates extends Flight  {
+public class EmiratesAirlines extends Flight  {
 
     static{
-        Printer.print("Have a Nice and Happy Journey with Emirates");
+
+        Printer.print("Have a Nice and Happy Journey with Emirates Airlines");
     }
-    public Emirates() {
+
+    public EmiratesAirlines() {
+
         super.setFlightName("Emirates Airlines");
         super.setFlightId("ES-AL");
         price = 1250.00;

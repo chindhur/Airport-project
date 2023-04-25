@@ -1,9 +1,8 @@
 package com.airport;
 
-import com.person.Person;
 import com.utils.Printer;
 
-public class metalDetecterCheck implements SecurityCheck {
+public class MetalDetectorCheck implements ISecurityCheck {
     private Boolean isThreatDetected;
     @Override
     public void scanForSecurity(Passenger passenger) {

@@ -1,11 +1,12 @@
 package com.airport;
 
 import com.utils.Printer;
-import com.person.Item;
+import com.person.IItem;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class Luggage implements Item{
+public final class Luggage implements IItem {
+
     public List<String> items;
     private String flightId;
     private String luggageId;
@@ -30,20 +31,11 @@ public final class Luggage implements Item{
     }
 
     public Boolean hasMetalObject() {
-        if (items.contains("metal")) {
-            return true;
-        } else {
-            return false;
-        }
+        return (items.contains("metal"));
     }
 
-
     public Boolean hasExplosiveObject() {
-        if (items.contains("Explosives")) {
-            return true;
-        } else {
-            return false;
-        }
+        return (items.contains("Explosives"));
     }
 
     public String getFlightId() {

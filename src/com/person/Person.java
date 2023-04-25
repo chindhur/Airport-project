@@ -1,7 +1,9 @@
 package com.person;
 
 import com.utils.Printer;
+
 public class Person {
+
     protected String name;
     protected Integer age;
     protected Address address;
@@ -19,40 +21,52 @@ public class Person {
         this.address = address;
         this.gender = gender;
     }
+
     public String getEmailId() {
         return emailId;
     }
+
     public void setEmailId(String emailId) {
         this.emailId = emailId;
     }
+
     public void printBasicDetails() {
         Printer.print("Name : " + name);
         Printer.print("Age : " + age);
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public Integer getAge() {
         return age;
     }
+
     public void setAge(Integer age) {
         this.age = age;
     }
+
     public Address getAddress() {
         return address;
     }
+
     public void setAddress(Address address) {
         this.address = address;
     }
+
     public Gender getGender() {
         return gender;
     }
+
     public void setGender(Gender gender) {
         this.gender = gender;
     }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {

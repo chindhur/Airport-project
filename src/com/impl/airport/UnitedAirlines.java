@@ -10,6 +10,7 @@ public class UnitedAirlines extends Flight {
     List<FoodMenu> menuList = new ArrayList<FoodMenu>();
 
     static{
+
         Printer.print("Have a Nice and Happy Journey with United Airlines");
     }
 
