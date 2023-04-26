@@ -9,17 +9,17 @@ public class Airport {
     private String airportName;
     private String cityName;
     private String area;
-    private Boolean IsRunwayOPen = true;
+    private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
     /*constructor*/
-    public Airport(String airportName, String cityName, String area, Boolean IsRunwayOPen) {
+    public Airport(String airportName, String cityName, String area, Boolean isRunwayOpen) {
         this.airportName = airportName;
         this.cityName = cityName;
         this.area = area;
-        this.IsRunwayOPen = IsRunwayOPen;
+        this.isRunwayOpen = isRunwayOpen;
     }
 
     public RunwayStatus getRunway() {
@@ -39,15 +39,15 @@ public class Airport {
     }
 
     public Boolean getOpenStatus() {
-        return IsRunwayOPen;
+        return isRunwayOpen;
     }
 
     public void setOpenStatus(Boolean isOpen) {
-        if (IsRunwayOPen) {
+        if (isRunwayOpen) {
             Printer.print("The airport is open");
         }
 
-        IsRunwayOPen = isOpen;
+        isRunwayOpen = isOpen;
     }
 
     public String getDetails() {
@@ -56,7 +56,7 @@ public class Airport {
                         "airportName : " + airportName +
                         " cityName :" + cityName +
                         " area :" + area +
-                        " The open status of Airport :" + IsRunwayOPen
+                        " The open status of Airport :" + isRunwayOpen
                         + "}";
         Printer.print(flight);
         return flight;
