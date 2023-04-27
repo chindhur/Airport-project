@@ -7,12 +7,10 @@ import com.utils.Printer;
 public class SingaporeAirlines extends Flight {
 
     static {
-
         Printer.print("Have a Nice and Happy Journey with SingaporeAirlines");
     }
 
     public SingaporeAirlines() {
-
         super.setFlightName("Singapore Airlines");
         super.setFlightId("SP-AL");
         price = 2000.00;
@@ -21,13 +19,11 @@ public class SingaporeAirlines extends Flight {
         menuList.add(new FoodMenu(true, "Veg Fried Rice", 15));
         menuList.add(new FoodMenu(true, "Kids Meals", 25));
         menuList.add(new FoodMenu(false, "Chicken Fried Rice", 20));
-
     }
 
     /*Abstract method implementation */
-    public Integer getDiscount() {
+    public void printDiscount() {
         Printer.print("OFFERS : Sorry! no offers at the moment");
-        return 0;
     }
 
     public String getWelcomeMessage() {

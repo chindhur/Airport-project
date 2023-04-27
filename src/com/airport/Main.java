@@ -1,5 +1,6 @@
 package com.airport;
 
+import com.Exception.AirportNotFoundException;
 import com.impl.airport.*;
 import com.person.Address;
 import com.person.Designation;
@@ -8,18 +9,21 @@ import com.person.Person;
 import com.utils.FoodMenu;
 import com.utils.Printer;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
         List<FoodMenu> menuList = null;
+
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
         Printer.print("---------------------------");
         Printer.print("Airport Details");
         Airport airport = new Airport("SFO",
                 "San Francisco", "UnitedStates", true);
-        airport.getDetails();
+        airport.printDetails();
         Printer.print("---------------------------");
 
         RunwayStatus status = RunwayStatus.TAKEOFF;
@@ -35,7 +39,7 @@ public class Main {
         for (FoodMenu menu : menuList) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
-        salFlight.getDiscount();
+        salFlight.printDiscount();
         Printer.print("---------------------------");
 
         UnitedAirlines unitedFlight = new UnitedAirlines();
@@ -45,12 +49,12 @@ public class Main {
         for (FoodMenu menu : menuList) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
-        unitedFlight.getDiscount();
+        unitedFlight.printDiscount();
         Printer.print("---------------------------");
 
         SouthWestAirlines southwestFlight = new SouthWestAirlines();
         southwestFlight.getWelcomeMessage();
-        southwestFlight.getDiscount();
+        southwestFlight.printDiscount();
         menuList = southwestFlight.getMenu();
         Printer.print("Listing Menu and price: ");
         for (FoodMenu menu : menuList) {
@@ -60,7 +64,7 @@ public class Main {
 
         EmiratesAirlines emiratesAirlines = new EmiratesAirlines();
         emiratesAirlines.getWelcomeMessage();
-        emiratesAirlines.getDiscount();
+        emiratesAirlines.printDiscount();
         menuList = emiratesAirlines.getMenu();
         Printer.print("Listing Menu and price");
         for (FoodMenu menu : menuList) {
@@ -90,19 +94,15 @@ public class Main {
         Printer.print("The Details are :" + ticketCounter.getDetails());
         Printer.print("---------------------------");
 
-        Printer.print("Validating Routes for SFORoute");
+        Printer.print("Validating Routes For SFO Route");
         Printer.print("---------------------------");
-        SFORoute sfoRoute = new SFORoute("India", 5);
+        Route sfoRoute = new Route("India", "SFO", 4);
         sfoRoute.getSource();
         Printer.print("The source is: " + sfoRoute.getSource());
         sfoRoute.getDestination();
-        sfoRoute.setDestination("India");
         Printer.print("The destination is:" + sfoRoute.getDestination());
         sfoRoute.getNoOfFlights();
-        Printer.print(sfoRoute.getNoOfFlights());
-        sfoRoute.setNoOfFlights(15);
         Printer.print("No of Flights for this route are:" + sfoRoute.getNoOfFlights());
-
 
         Printer.print("---------------------------");
         Printer.print("Validating for Airport Employee");
@@ -137,6 +137,31 @@ public class Main {
         testRunwayStatus(RunwayStatus.IDLE);
         testRunwayStatus(RunwayStatus.LANDING);
         Printer.print("---------------------------");
+
+        //Implementing AirportNotFoundException
+        try{
+            checkAirport(airport);
+        }
+        catch (AirportNotFoundException airportNotFoundException){
+            Printer.print("Found Exception " + airportNotFoundException.getMessage());
+        }
+    }
+
+    public static void checkAirport(Airport airport)
+        throws AirportNotFoundException
+    {
+        //Implementing AirportNotFoundException
+        Scanner sc = new Scanner(System.in);
+        Printer.print("Please enter the airport name: ");
+        String name = sc.nextLine();
+        Printer.print("searching airport:"+name);
+
+        if (airport.getAirportName().equalsIgnoreCase(name)) {
+            Printer.print("The details of the airport are:" + airport.printDetails());
+        }
+        else {
+            throw new AirportNotFoundException(name + "Airport not found");
+        }
     }
 
     public static void testRunwayStatus(RunwayStatus status) {

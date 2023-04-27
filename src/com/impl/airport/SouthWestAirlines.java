@@ -1,6 +1,7 @@
 package com.impl.airport;
 
 import com.airport.Flight;
+import com.airport.Route;
 import com.utils.FoodMenu;
 import com.utils.Printer;
 
@@ -10,14 +11,13 @@ import java.sql.Timestamp;
 public class SouthWestAirlines extends Flight {
 
     static {
-
         Printer.print("Have a Nice and Happy Journey with SouthWest Airlines");
     }
 
     public SouthWestAirlines(String flightId, String flightName,
                              String source, String destination, Timestamp arrivalTime,
-                             Timestamp departureTime, Double price) {
-        super(flightId, flightName, source, destination, arrivalTime, departureTime, price);
+                             Timestamp departureTime, Double price, Route route) {
+        super(flightId, flightName, source, destination, arrivalTime, departureTime, price, route );
     }
 
     public SouthWestAirlines() {
@@ -31,13 +31,11 @@ public class SouthWestAirlines extends Flight {
         menuList.add(new FoodMenu(true, "Veg Fried Rice", 15));
         menuList.add(new FoodMenu(true, "Kids Meals", 25));
         menuList.add(new FoodMenu(false, "Chicken Fried Rice", 20));
-
     }
 
     /*Abstract method implementation */
-    public Integer getDiscount() {
+    public void printDiscount() {
         Printer.print("OFFERS: Seasonal Offer : 40% off on meal");
-        return 0;
     }
 
     public String getWelcomeMessage() {

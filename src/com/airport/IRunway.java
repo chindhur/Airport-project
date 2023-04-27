@@ -2,19 +2,19 @@ package com.airport;
 
 public interface IRunway {
 
-    public String getRunwayNumber();
+    String getRunwayNumber();
 
-    public void setRunwayNumber(String runwayNumber);
+    void setRunwayNumber(String runwayNumber);
 
-    public String getFlightName();
+    String getFlightName();
 
-    public void setFlightName(String flightName);
+    void setFlightName(String flightName);
 
-    public Boolean getOccupiedStatus();
+    Boolean getOccupiedStatus();
 
-    public void setOccupiedStatus(Boolean occupiedStatus);
+    void setOccupiedStatus(Boolean occupiedStatus);
 
-    public void printDetails();
+    void printDetails();
 
-    public void printOccupiedStatus();
+    void printOccupiedStatus();
 }

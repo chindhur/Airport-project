@@ -10,7 +10,6 @@ public class UnitedAirlines extends Flight {
     List<FoodMenu> menuList = new ArrayList<FoodMenu>();
 
     static {
-
         Printer.print("Have a Nice and Happy Journey with United Airlines");
     }
 
@@ -20,20 +19,15 @@ public class UnitedAirlines extends Flight {
         price = 1800.00;
         source = "India";
         destination = "United_Arab_Emirates";
-
         menuList.add(new FoodMenu(true, "Veg Noodles", 15));
         menuList.add(new FoodMenu(true, "Pasta", 20));
         menuList.add(new FoodMenu(true, "Mango MilkShake", 25));
         menuList.add(new FoodMenu(false, "Chicken Noodles", 20));
-
-
     }
 
     /*Abstract method implementation */
-
-    public Integer getDiscount() {
+    public void printDiscount() {
         Printer.print("OFFERS: Sorry! no offers at the moment");
-        return 0;
     }
 
     public String getWelcomeMessage() {

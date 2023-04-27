@@ -7,7 +7,7 @@ import java.util.List;
 
 public final class Luggage implements IItem {
 
-    public List<String> items;
+    public List<String> checkinItems;
     private String flightId;
     private String luggageId;
     private String passengerId;
@@ -19,23 +19,23 @@ public final class Luggage implements IItem {
         this.passengerId = passengerId;
         this.flightId = flightId;
         this.noOfLuggages = noOfLuggages;
-        this.items = new ArrayList<String>();
+        this.checkinItems = new ArrayList<String>();
     }
 
     public void addItem(String item) {
-        items.add(item);
+        checkinItems.add(item);
     }
 
     public void removeItem(String item) {
-        items.remove(item);
+        checkinItems.remove(item);
     }
 
     public Boolean hasMetalObject() {
-        return (items.contains("metal"));
+        return (checkinItems.contains("metal"));
     }
 
     public Boolean hasExplosiveObject() {
-        return (items.contains("Explosives"));
+        return (checkinItems.contains("Explosives"));
     }
 
     public String getFlightId() {

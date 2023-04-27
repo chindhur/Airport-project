@@ -7,12 +7,10 @@ import com.utils.Printer;
 public class EmiratesAirlines extends Flight {
 
     static {
-
         Printer.print("Have a Nice and Happy Journey with Emirates Airlines");
     }
 
     public EmiratesAirlines() {
-
         super.setFlightName("Emirates Airlines");
         super.setFlightId("ES-AL");
         price = 1250.00;
@@ -25,9 +23,8 @@ public class EmiratesAirlines extends Flight {
 
     /*Abstract method implementation */
 
-    public Integer getDiscount() {
+    public void printDiscount() {
         Printer.print("OFFERS: Seasonal Offer : 20% of on Menu");
-        return 0;
     }
 
     public String getWelcomeMessage() {
@@ -53,7 +50,6 @@ public class EmiratesAirlines extends Flight {
         Printer.print("flight name:" + super.getFlightName());
         Printer.print("flight source : " + super.getSource());
         Printer.print("flight destination : " + super.getDestination());
-
     }
 
     /* implements getPrice abstract method from Flight class*/

@@ -2,14 +2,9 @@ package com.airport;
 
 public interface IRoute {
 
-    public String getSource();
+     String getSource();
 
-    public String getDestination();
+     String getDestination();
 
-    public void setDestination(String destination);
-
-    public int getNoOfFlights();
-
-    public void setNoOfFlights(int noOfFlights);
-
+     int getNoOfFlights();
 }

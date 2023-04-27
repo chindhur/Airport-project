@@ -10,29 +10,28 @@ public class Passenger implements IItem {
 
     private Person passenger;
     private Luggage luggage;
-    private List<String> items;
+    private List<String> cabinItems;
 
     public Passenger(Person passenger, Luggage luggage) {
         this.passenger = passenger;
         this.luggage = luggage;
-        this.items = new ArrayList<String>();
-
+        this.cabinItems = new ArrayList<String>();
     }
 
     public void addItem(String item) {
-        items.add(item);
+        cabinItems.add(item);
     }
 
     public void removeItem(String item) {
-        items.remove(item);
+        cabinItems.remove(item);
     }
 
     public Boolean hasMetalObject() {
-        return (items.contains("metal"));
+        return (cabinItems.contains("metal"));
     }
 
     public Boolean hasExplosiveObject() {
-        return (items.contains("explosive"));
+        return (cabinItems.contains("explosive"));
     }
 
     public Person getPassenger() {

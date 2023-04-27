@@ -50,7 +50,7 @@ public class Airport {
         isRunwayOpen = isOpen;
     }
 
-    public String getDetails() {
+    public String printDetails() {
         String flight =
                 "{ " +
                         "airportName : " + airportName +

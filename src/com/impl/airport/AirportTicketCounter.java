@@ -94,7 +94,5 @@ public class AirportTicketCounter implements ITicketCounter {
                 " flight Id is :" + flightId;
         return details;
     }
-
-
 }
 
