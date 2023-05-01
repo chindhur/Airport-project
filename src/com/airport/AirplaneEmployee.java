@@ -20,7 +20,6 @@ public class AirplaneEmployee extends Employee {
     public String getAssignedAirplane() {
         Printer.print("Assigned Airplane " + assignedAirplane);
         return assignedAirplane;
-
     }
 
     public void setAssignedAirplane(String assignedAirplane) {

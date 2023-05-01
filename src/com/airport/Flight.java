@@ -2,7 +2,6 @@ package com.airport;
 
 import com.impl.airport.Route;
 import com.utils.Printer;
-
 import java.sql.Timestamp;
 import java.util.*;
 import com.Exception.NoSeatLeftException;
