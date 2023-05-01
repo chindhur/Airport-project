@@ -1,13 +1,15 @@
-package com.airport;
+package com.impl.airport;
 
-import com.person.IItem;
+import com.airport.IItem;
 import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.List;
+import com.Exception.LimitExceededException;
 
 public final class Luggage implements IItem {
 
-    public List<String> checkinItems;
+    private List<String> checkinItems;
+    private static final int MAX_ALLOWED_ITEMS = 2;
     private String flightId;
     private String luggageId;
     private String passengerId;
@@ -20,6 +22,15 @@ public final class Luggage implements IItem {
         this.flightId = flightId;
         this.noOfLuggages = noOfLuggages;
         this.checkinItems = new ArrayList<String>();
+    }
+
+    public void addLuggage()
+            throws LimitExceededException {
+        if (noOfLuggages >= 2)
+            throw new LimitExceededException("No of Luggage limit got exceeded");
+    }
+    public void setCheckinItems(List<String> checkinItems) {
+        this.checkinItems = checkinItems;
     }
 
     public void addItem(String item) {

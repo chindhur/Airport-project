@@ -1,4 +1,6 @@
-package com.airport;
+package com.impl.airport;
+
+import com.airport.IRoute;
 
 public class Route implements IRoute {
 

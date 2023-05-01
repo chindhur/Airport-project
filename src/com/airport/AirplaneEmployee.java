@@ -11,7 +11,7 @@ public class AirplaneEmployee extends Employee {
     private String assignedAirplane = "Not Assigned";
 
     public AirplaneEmployee(String name, Integer age, Address address, Gender gender,
-                            String employeeId, Double employeeSalary, Designation designation,
+                            int employeeId, Double employeeSalary, Designation designation,
                             String assignedAirplane) {
         super(name, age, address, gender, employeeId, employeeSalary, designation);
         this.assignedAirplane = assignedAirplane;

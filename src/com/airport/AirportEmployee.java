@@ -4,6 +4,7 @@ import com.person.Address;
 import com.person.Designation;
 import com.person.Employee;
 import com.person.Gender;
+import com.utils.Printer;
 
 public class AirportEmployee extends Employee {
 
@@ -14,10 +15,11 @@ public class AirportEmployee extends Employee {
     }
 
     public AirportEmployee(String name, Integer age, Address address, Gender gender,
-                           String employeeId, Double employeeSalary, Designation designation,
+                           int employeeId, Double employeeSalary, Designation designation,
                            String assignedAirport) {
         super(name, age, address, gender, employeeId, employeeSalary, designation);
         airportName = assignedAirport;
+        Printer.debug("Airport employee initialized");
     }
 
     public void setAirport(String airport) {

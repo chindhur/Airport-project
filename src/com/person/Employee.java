@@ -1,11 +1,12 @@
 package com.person;
 
+import com.Exception.InvalidEmployeeIdException;
 import com.utils.Printer;
 import java.util.Objects;
 
 public class Employee extends Person {
 
-    private String employeeId;
+    private int employeeId;
     private Double employeeSalary;
     private Designation designation;
 
@@ -13,14 +14,8 @@ public class Employee extends Person {
         super(name);
     }
 
-    public Employee(String name, String employeeId, Double employeeSalary, Designation designation) {
-        super(name);
-        this.employeeId = employeeId;
-        this.employeeSalary = employeeSalary;
-        this.designation = designation;
-    }
-
-    public Employee(String name, Integer age, Address address, Gender gender, String employeeId, Double employeeSalary, Designation designation) {
+    public Employee(String name, Integer age, Address address, Gender gender,
+                    int employeeId, Double employeeSalary, Designation designation) {
         super(name, age, address, gender);
         this.employeeId = employeeId;
         this.employeeSalary = employeeSalary;
@@ -38,15 +33,21 @@ public class Employee extends Person {
         Printer.print("Designation : " + designation.toString());
     }
 
-    public String getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 
-    public void setEmployeeId(String employeeId) {
+    public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
 
-    public Double getEmployeeSalary() {
+    public void checkForEmployeeid()
+            throws InvalidEmployeeIdException{
+            if(employeeId < 1 )
+                throw new InvalidEmployeeIdException("EmployeeId is invalid");
+        }
+
+        public Double getEmployeeSalary() {
         return employeeSalary;
     }
 

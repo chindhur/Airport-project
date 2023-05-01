@@ -1,5 +1,6 @@
-package com.airport;
+package com.impl.airport;
 
+import com.airport.ISecurityCheck;
 import com.utils.Printer;
 
 public class MetalDetectorCheck implements ISecurityCheck {

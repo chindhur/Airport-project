@@ -1,5 +1,8 @@
 package com.airport;
 
+import com.impl.airport.Luggage;
+import com.impl.airport.Passenger;
+
 public interface ISecurityCheck {
 
     Boolean isThreatDetected = false;

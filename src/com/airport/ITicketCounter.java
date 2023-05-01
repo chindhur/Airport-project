@@ -1,34 +1,10 @@
 package com.airport;
 
+import com.Exception.NoSeatLeftException;
+
 public interface ITicketCounter {
 
-     String getTicketId();
+     Ticket bookTicket(Ticket ticket) throws NoSeatLeftException;
 
-     void setTicketId(String ticketId);
-
-     String getSource();
-
-     void setSource(String source);
-
-     String getDestination();
-
-     void setDestination(String destination);
-
-     String getPassengerId();
-
-     void setPassengerId(String passengerId);
-
-     String getFlightId();
-
-     void setFlightId(String flightId);
-
-     void bookTicket(String ticketId, String source,
-                           String destination, float price,
-                           String passengerId, String flightId);
-
-     String getDetails();
-
-     float getPrice();
-
-     void setPrice(float price);
+     void printDetails();
 }

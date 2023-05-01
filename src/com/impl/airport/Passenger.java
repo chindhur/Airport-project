@@ -1,6 +1,6 @@
-package com.airport;
+package com.impl.airport;
 
-import com.person.IItem;
+import com.airport.IItem;
 import com.person.Person;
 import com.utils.Printer;
 import java.util.ArrayList;

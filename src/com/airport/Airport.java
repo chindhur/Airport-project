@@ -1,8 +1,13 @@
 package com.airport;
 
 import com.utils.Printer;
+
+import javax.management.openmbean.KeyAlreadyExistsException;
+import javax.print.attribute.HashAttributeSet;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Airport {
 
@@ -11,8 +16,23 @@ public class Airport {
     private String area;
     private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
+    private Map<String,String> airlinesMap;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
+
+    public Boolean getRunwayOpen() {
+        return isRunwayOpen;
+    }
+
+    public void setRunwayOpen(Boolean runwayOpen) {
+        isRunwayOpen = runwayOpen;
+    }
+
+    public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList){
+        this.airportEmployeeList = airportEmployeeList;
+        this.airplaneEmployeeList = airplaneEmployeeList;
+        airlinesMap = new HashMap<String, String>();
+    }
 
     /*constructor*/
     public Airport(String airportName, String cityName, String area, Boolean isRunwayOpen) {
@@ -20,6 +40,20 @@ public class Airport {
         this.cityName = cityName;
         this.area = area;
         this.isRunwayOpen = isRunwayOpen;
+        airlinesMap = new HashMap<String, String>();
+    }
+
+    public Map<String, String> getAirlinesMap() {
+        return airlinesMap;
+    }
+
+    public void setAirlinesMap(String flightId, String flightName)
+    throws KeyAlreadyExistsException{
+        if (airlinesMap.containsKey(flightId)) {
+            Printer.debug("Map already contains key " + flightId);
+            throw new KeyAlreadyExistsException("Flight " + flightId + " already exists.");
+        }
+        this.airlinesMap.put(flightId, flightName);
     }
 
     public RunwayStatus getRunway() {
@@ -30,8 +64,8 @@ public class Airport {
         return airplaneEmployeeList;
     }
 
-    public void setAirplaneEmployeeList(List<AirplaneEmployee> airplaneEmployeeList) {
-        this.airplaneEmployeeList = airplaneEmployeeList;
+    public void setAirplaneEmployeeList(AirplaneEmployee airplaneEmployee) {
+        airplaneEmployeeList.add(airplaneEmployee);
     }
 
     public void setRunway(RunwayStatus runwayIn) {
@@ -46,29 +80,26 @@ public class Airport {
         if (isRunwayOpen) {
             Printer.print("The airport is open");
         }
-
         isRunwayOpen = isOpen;
     }
 
     public String printDetails() {
-        String flight =
-                "{ " +
-                        "airportName : " + airportName +
-                        " cityName :" + cityName +
-                        " area :" + area +
-                        " The open status of Airport :" + isRunwayOpen
-                        + "}";
+        Printer.debug("printing Airport details");
+        String flight =  System.lineSeparator()+
+                        "airportName : " + airportName + System.lineSeparator()+
+                        " cityName :" + cityName + System.lineSeparator()+
+                        " area :" + area +System.lineSeparator()+
+                        " The open status of Airport :" + isRunwayOpen;
         Printer.print(flight);
         return flight;
-
     }
 
     public List<AirportEmployee> getAirportEmployeeList() {
         return airportEmployeeList;
     }
 
-    public void setAirportEmployeeList(List<AirportEmployee> airportEmployeeList) {
-        this.airportEmployeeList = airportEmployeeList;
+    public void setAirportEmployeeList(AirportEmployee airportEmployee) {
+        airportEmployeeList.add(airportEmployee);
     }
 
     public String getCityName() {

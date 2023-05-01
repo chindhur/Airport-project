@@ -1,12 +1,27 @@
 package com.utils;
 
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+
 public class Printer {
 
+    private static Logger logger = LogManager.getLogger(Printer.class);
+
     public static void print(String out) {
-        System.out.println("AIRPORT: " + out);
+        logger.info("AIRPORT: " + out);
     }
 
     public static void print(int out) {
-        System.out.println("AIRPORT: " + out);
+        logger.info("AIRPORT: " + out);
     }
+
+    public static void error(String out) {
+        logger.error("ERROR: " + out);
+    }
+
+    public static void debug(String out) {
+        logger.debug(out);
+    }
+
 }

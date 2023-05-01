@@ -1,5 +1,7 @@
-package com.airport;
 
+package com.impl.airport;
+
+import com.airport.IRunway;
 import com.utils.Printer;
 
 public class AirportRunway implements IRunway {
@@ -7,6 +9,12 @@ public class AirportRunway implements IRunway {
     private String runwayNumber;
     private String flightName;
     private Boolean isRunwayOccupied = false;
+
+    public AirportRunway(String runwayNumber, String flightName, Boolean isRunwayOccupied) {
+        this.runwayNumber = runwayNumber;
+        this.flightName = flightName;
+        this.isRunwayOccupied = isRunwayOccupied;
+    }
 
     public String getRunwayNumber() {
         return runwayNumber;
@@ -33,16 +41,15 @@ public class AirportRunway implements IRunway {
     }
 
     public void printDetails() {
-        String runway =
-                "{ " +
-                        "The runway Number is : " + runwayNumber +
-                        "The flightname is :" + flightName +
-                        "The occupied status is :" + isRunwayOccupied + "}";
+        String runway =  System.lineSeparator()+
+                        "The runway Number is : " + runwayNumber + System.lineSeparator()+
+                        "The flightname is :" + flightName +System.lineSeparator()+
+                        "The occupied status is :" + isRunwayOccupied;
         Printer.print(runway);
     }
 
     public void printOccupiedStatus() {
-        if (isRunwayOccupied == true) {
+        if (isRunwayOccupied) {
             Printer.print("The runway is occupied");
         } else {
             Printer.print("The runway is free");

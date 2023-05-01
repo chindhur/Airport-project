@@ -1,62 +1,92 @@
 package com.airport;
 
+import com.impl.airport.Route;
 import com.utils.Printer;
-import com.utils.FoodMenu;
+
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import com.Exception.NoSeatLeftException;
+import com.Exception.InvalidArgumentException;
 
-public abstract class Flight {
+public class Flight {
 
-    protected static String flightId;
-    protected static String flightName;
-    private static Integer noOfWings;
-
-    static {
-
-        noOfWings = 2;
-        Printer.print("Initialized number of wings in static block");
-    }
-
-    private final Integer NO_OF_WHEELS = 18;
+    protected String flightId;
+    protected String flightName;
+    private Route route;
+    private static int noOfWings;
+    private final int NO_OF_WHEELS = 18;
     protected String source;
     protected String destination;
     protected Double price;
-    protected List<FoodMenu> menuList = new ArrayList<FoodMenu>();
     private Timestamp arrivalTime;
     private Timestamp departureTime;
+    private int noOfSeats=50;
+    private int noOfSeatsLeft;
+    List<FoodMenu> menuList;
+
+    static {
+        Printer.print("Have a Nice and Happy Journey with our Airlines");
+    }
 
     /*constructors*/
-    /* Empty constructor required here to avoid compilation errors */
-    public Flight() {
-    }
-
-    public Flight(String flightId, String flightName,
-                  String source, String destination, Timestamp arrivalTime,
-                  Timestamp departureTime, Double price) {
-        this.flightId = flightId;
-        this.flightName = flightName;
-        this.source = source;
+    public Flight(String flightId, String source, String destination,
+                  int noOfSeats,String flightName)
+            throws InvalidArgumentException
+    {
+        if (destination.equals(source)) {
+            throw new InvalidArgumentException("destination and origin are the same");
+        }
+        this.flightId=flightId;
+        this.source=source;
         this.destination = destination;
-        this.arrivalTime = arrivalTime;
-        this.departureTime = departureTime;
-        this.price = price;
+        this.noOfSeats=noOfSeats;
+        this.noOfSeatsLeft = noOfSeatsLeft;
+        this.flightName = flightName;
+
     }
 
-    public final Integer getNoOfWheels() {
+    public final int getNoOfWheels() {
         return NO_OF_WHEELS;
     }
 
-    /*Abstract methods*/
-    public abstract Integer getDiscount();
+    public List<FoodMenu> getMenuList() {
+        return menuList;
+    }
 
-    public abstract String getWelcomeMessage();
+    public void setMenuList(List<FoodMenu> menuList) {
+        this.menuList = menuList;
+    }
 
-    public abstract Integer getSeatCapacity();
+    public void printDiscount(){
+        Printer.print("OFFERS: Seasonal Offer : 20% of on Menu");
+    }
 
-    public abstract Double getPrice();
+    public  int getSeatCapacity(){
+        return noOfSeats;
+    }
 
-    /* Default methods */
+    public  Double getPrice(){
+        return price;
+    }
+
+    public Route getRoute() {
+        return route;
+    }
+
+    public void setRoute(Route route) {
+        this.route = route;
+    }
+
+    public int bookASeat()
+    throws NoSeatLeftException{
+        if (noOfSeatsLeft > 0) {
+            noOfSeatsLeft = noOfSeatsLeft - 1;
+            Printer.debug("Ticket booked " + noOfSeatsLeft );
+            return noOfSeatsLeft;
+        }
+        throw new NoSeatLeftException(getFlightId() + " : There are no seats left to book");
+    }
+
     public List<FoodMenu> getMenu() {
         return menuList;
     }
@@ -157,4 +187,10 @@ public abstract class Flight {
         hash = 53 * hash + this.flightId.hashCode();
         return hash;
     }
-}
+    public enum FoodType {
+        VEG,
+        NONVEG,
+        KIDSFOOD
+    }
+    }
+
