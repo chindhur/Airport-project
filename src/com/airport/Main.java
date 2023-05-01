@@ -1,6 +1,6 @@
 package com.airport;
 
-import com.Exception.*;
+import com.exception.*;
 import com.impl.airport.*;
 import com.person.*;
 import com.utils.Printer;
@@ -25,11 +25,6 @@ public class Main {
         airlinesMap.put("SW-AL","SouthwestAirlines");
         Printer.print("The map elements are :");
         airlinesMap.forEach((key, value) -> Printer.print(key + ":" + value));
-        airport.getAirlinesMap();
-        airport.setAirlinesMap("SP-AL","SingaporeAirlines");
-        airport.setAirlinesMap("UN-AL","UnitedAirlines");
-        airport.setAirlinesMap("EM-AL","EmiratesAirlines");
-        airport.setAirlinesMap("SW-AL","SouthwestAirlines");
         Printer.print("---------------------------");
 
         Printer.print("Employee Details");
@@ -77,6 +72,10 @@ public class Main {
             Printer.error("Flight Error : " +i.getMessage());
 
         }
+        airport.setAirlinesMap(salFlight);
+        airport.setAirlinesMap(unitedFlight);
+        airport.setAirlinesMap(emiratesFlight);
+        airport.setAirlinesMap(southwestFlight);
 
         salFlight.printDiscount();
         salFlight.getNoOfWheels();
@@ -137,7 +136,7 @@ public class Main {
         Printer.print("Validating Address");
         Printer.print("---------------------------");
         Address address = new Address("valley green", "cuper", "CA", "94065", "US");
-        Luggage luggage = new Luggage("1234", "AUX12345", "UN-AL", 2);
+        Luggage luggage = new Luggage("1234", "AUX12345", "UN-AL", 1);
         Person person = new Person("Ranco", 65, address, Gender.MALE);
         Passenger passenger = new Passenger(person, luggage);
         passenger.printDetails();
@@ -230,7 +229,13 @@ public class Main {
 
         //Implementing LimitExceededException
         try {
-            luggage.addLuggage();
+            Printer.print("Adding Second luggage ");
+            passenger.addLuggage();
+            Printer.print("Added Second luggage ");
+            Printer.print("Adding third luggage ");
+            passenger.addLuggage();
+            Printer.print("Added third luggage ");
+
         } catch (LimitExceededException l) {
             Printer.error("Luggage Error: " + l.getMessage());
         }

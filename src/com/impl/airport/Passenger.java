@@ -1,5 +1,6 @@
 package com.impl.airport;
 
+import com.exception.LimitExceededException;
 import com.airport.IItem;
 import com.person.Person;
 import com.utils.Printer;
@@ -8,6 +9,7 @@ import java.util.List;
 
 public class Passenger implements IItem {
 
+    private static final int MAX_ALLOWED_LUGGAGE = 2;
     private Person passenger;
     private Luggage luggage;
     private List<String> cabinItems;
@@ -16,6 +18,13 @@ public class Passenger implements IItem {
         this.passenger = passenger;
         this.luggage = luggage;
         this.cabinItems = new ArrayList<String>();
+    }
+
+    public void addLuggage()
+            throws LimitExceededException {
+        if (luggage.getNoOfLuggage() >= MAX_ALLOWED_LUGGAGE)
+            throw new LimitExceededException("No of Luggage limit got exceeded");
+        luggage.setNoOfLuggage(luggage.getNoOfLuggage() + 1);
     }
 
     public void addItem(String item) {
@@ -52,7 +61,7 @@ public class Passenger implements IItem {
 
     public void printDetails() {
         Printer.print("Passenger Name : " + passenger.getName());
-        Printer.print("Assocaited Luggage " + luggage.getLuggageDetails());
+        Printer.print("Associated Luggage " + luggage.getLuggageDetails());
     }
 
     public String toString() {
