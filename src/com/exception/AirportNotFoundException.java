@@ -1,4 +1,4 @@
-package com.Exception;
+package com.exception;
 
 public class AirportNotFoundException extends Exception{
     public AirportNotFoundException(String message){

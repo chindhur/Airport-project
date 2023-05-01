@@ -1,4 +1,4 @@
-package com.Exception;
+package com.exception;
 
 public class LimitExceededException extends Exception{
     public LimitExceededException(String message){

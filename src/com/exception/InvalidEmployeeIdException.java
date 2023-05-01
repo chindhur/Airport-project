@@ -1,4 +1,4 @@
-package com.Exception;
+package com.exception;
 
 public class InvalidEmployeeIdException extends Exception{
     public InvalidEmployeeIdException(String message){

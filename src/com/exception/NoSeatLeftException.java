@@ -1,4 +1,4 @@
-package com.Exception;
+package com.exception;
 
 public class NoSeatLeftException extends Exception{
     public NoSeatLeftException(String message){
