@@ -1,13 +1,13 @@
 package com.airport;
 
 import com.utils.Printer;
-
 import javax.management.openmbean.KeyAlreadyExistsException;
 import javax.print.attribute.HashAttributeSet;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import com.airport.Flight;
 
 public class Airport {
 
@@ -47,13 +47,13 @@ public class Airport {
         return airlinesMap;
     }
 
-    public void setAirlinesMap(String flightId, String flightName)
+    public void setAirlinesMap(Flight flight)
     throws KeyAlreadyExistsException{
-        if (airlinesMap.containsKey(flightId)) {
-            Printer.debug("Map already contains key " + flightId);
-            throw new KeyAlreadyExistsException("Flight " + flightId + " already exists.");
+        if (airlinesMap.containsKey(flight.getFlightId())) {
+            Printer.debug("Map already contains key " + flight.getFlightId());
+            throw new KeyAlreadyExistsException("Flight " + flight.getFlightId() + " already exists.");
         }
-        this.airlinesMap.put(flightId, flightName);
+        this.airlinesMap.put(flight.getFlightId(),flight.getFlightName());
     }
 
     public RunwayStatus getRunway() {
