@@ -51,19 +51,19 @@ public class Ticket {
     public Flight getFlight() {
         return flight;
     }
-    public void setFlight(Flight F) {
-        flight=F;
+    public void setFlight(Flight flight) {
+        this.flight=flight;
     }
     public Passenger getPassenger() {
         return passenger;
     }
-    public void setPassenger(Passenger P) {
-        passenger=P;
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
     }
     public double getPrice() {
         return price;
     }
-    public void setPrice(double P) {
-        price=P;
+    public void setPrice(double price) {
+        this.price=price;
     }
 }
