@@ -24,8 +24,8 @@ public class Airport {
         return isRunwayOpen;
     }
 
-    public void setRunwayOpen(Boolean runwayOpen) {
-        isRunwayOpen = runwayOpen;
+    public void setRunwayOpen(Boolean isRunwayOpen) {
+        isRunwayOpen = isRunwayOpen;
     }
 
     public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList){
@@ -47,8 +47,7 @@ public class Airport {
         return airlinesMap;
     }
 
-    public void setAirlinesMap(Flight flight)
-    throws KeyAlreadyExistsException{
+    public void setAirlinesMap(Flight flight) throws KeyAlreadyExistsException{
         if (airlinesMap.containsKey(flight.getFlightId())) {
             Printer.debug("Map already contains key " + flight.getFlightId());
             throw new KeyAlreadyExistsException("Flight " + flight.getFlightId() + " already exists.");
@@ -64,7 +63,7 @@ public class Airport {
         return airplaneEmployeeList;
     }
 
-    public void setAirplaneEmployeeList(AirplaneEmployee airplaneEmployee) {
+    public void addAirplaneEmployee(AirplaneEmployee airplaneEmployee) {
         airplaneEmployeeList.add(airplaneEmployee);
     }
 
@@ -98,7 +97,7 @@ public class Airport {
         return airportEmployeeList;
     }
 
-    public void setAirportEmployeeList(AirportEmployee airportEmployee) {
+    public void addAirportEmployee(AirportEmployee airportEmployee) {
         airportEmployeeList.add(airportEmployee);
     }
 
@@ -151,7 +150,6 @@ public class Airport {
         if (!this.area.equals(other.area)) {
             return false;
         }
-
         return true;
     }
 

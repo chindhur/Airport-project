@@ -4,8 +4,8 @@ import com.impl.airport.Route;
 import com.utils.Printer;
 import java.sql.Timestamp;
 import java.util.*;
-import com.Exception.NoSeatLeftException;
-import com.Exception.InvalidArgumentException;
+import com.exception.NoSeatLeftException;
+import com.exception.InvalidArgumentException;
 
 public class Flight {
 
@@ -41,7 +41,6 @@ public class Flight {
         this.noOfSeats=noOfSeats;
         this.noOfSeatsLeft = noOfSeatsLeft;
         this.flightName = flightName;
-
     }
 
     public final int getNoOfWheels() {
@@ -76,8 +75,7 @@ public class Flight {
         this.route = route;
     }
 
-    public int bookASeat()
-    throws NoSeatLeftException{
+    public int bookASeat() throws NoSeatLeftException{
         if (noOfSeatsLeft > 0) {
             noOfSeatsLeft = noOfSeatsLeft - 1;
             Printer.debug("Ticket booked " + noOfSeatsLeft );

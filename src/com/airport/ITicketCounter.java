@@ -1,6 +1,6 @@
 package com.airport;
 
-import com.Exception.NoSeatLeftException;
+import com.exception.NoSeatLeftException;
 
 public interface ITicketCounter {
 

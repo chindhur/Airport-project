@@ -20,8 +20,7 @@ public class Passenger implements IItem {
         this.cabinItems = new ArrayList<String>();
     }
 
-    public void addLuggage()
-            throws LimitExceededException {
+    public void addLuggage() throws LimitExceededException {
         if (luggage.getNoOfLuggage() >= MAX_ALLOWED_LUGGAGE)
             throw new LimitExceededException("No of Luggage limit got exceeded");
         luggage.setNoOfLuggage(luggage.getNoOfLuggage() + 1);

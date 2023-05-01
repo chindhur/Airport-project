@@ -1,6 +1,6 @@
 package com.person;
 
-import com.Exception.InvalidEmployeeIdException;
+import com.exception.InvalidEmployeeIdException;
 import com.utils.Printer;
 import java.util.Objects;
 

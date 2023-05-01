@@ -10,7 +10,6 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
         Printer.print("---------------------------");
@@ -108,7 +107,6 @@ public class Main {
         southwestFlight.printDiscount();
         Printer.print("Listing Menu and price: ");
         menuList = new ArrayList<FoodMenu>();
-
         menuList.add(new FoodMenu(true, "Veg Fried Rice", 15));
         menuList.add(new FoodMenu(true, "Kids Meals", 25));
         menuList.add(new FoodMenu(false, "Chicken Fried Rice", 20));
@@ -121,7 +119,6 @@ public class Main {
         emiratesFlight.printDiscount();
         Printer.print("Listing Menu and price");
         menuList = new ArrayList<FoodMenu>();
-
         menuList.add(new FoodMenu(true, "Veg Noodles", 15));
         menuList.add(new FoodMenu(true, "Pasta", 20));
         menuList.add(new FoodMenu(true, "Mango MilkShake", 25));
@@ -132,7 +129,6 @@ public class Main {
         }
 
         Printer.print("-----------------------------");
-
         Printer.print("Validating Address");
         Printer.print("---------------------------");
         Address address = new Address("valley green", "cuper", "CA", "94065", "US");
@@ -255,15 +251,13 @@ public class Main {
         }
     }
 
-    public static void checkAirport(Airport airport)
-        throws AirportNotFoundException
-    {
+    public static void checkAirport(Airport airport) throws AirportNotFoundException {
+
         //Implementing AirportNotFoundException
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airport name: ");
         String name = sc.nextLine();
         Printer.print("searching airport:"+name);
-
         if (airport.getAirportName().equalsIgnoreCase(name)) {
             Printer.print("The details of the airport are:" + airport.printDetails());
         }

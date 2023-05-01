@@ -6,7 +6,7 @@ import org.apache.logging.log4j.LogManager;
 
 public class Printer {
 
-    private static Logger logger = LogManager.getLogger(Printer.class);
+    private static final Logger logger = LogManager.getLogger(Printer.class);
 
     public static void print(String out) {
         logger.info("AIRPORT: " + out);

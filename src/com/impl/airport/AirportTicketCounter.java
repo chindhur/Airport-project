@@ -1,6 +1,6 @@
 package com.impl.airport;
 
-import com.Exception.NoSeatLeftException;
+import com.exception.NoSeatLeftException;
 import com.airport.ITicketCounter;
 import com.airport.Ticket;
 import com.utils.Printer;
