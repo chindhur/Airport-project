@@ -8,25 +8,14 @@ import com.utils.Printer;
 
 public class AirportEmployee extends Employee {
 
-    String airportName = null;
-
     public AirportEmployee(String name) {
         super(name);
     }
 
     public AirportEmployee(String name, Integer age, Address address, Gender gender,
-                           int employeeId, Double employeeSalary, Designation designation,
-                           String assignedAirport) {
+                           int employeeId, Double employeeSalary, Designation designation) {
         super(name, age, address, gender, employeeId, employeeSalary, designation);
-        airportName = assignedAirport;
         Printer.debug("Airport employee initialized");
     }
 
-    public void setAirport(String airport) {
-        airportName = airport;
-    }
-
-    public String getAssignedAirport() {
-        return airportName;
-    }
 }

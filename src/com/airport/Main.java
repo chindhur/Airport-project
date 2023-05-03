@@ -17,13 +17,7 @@ public class Main {
         Airport airport = new Airport("SFO",
                 "San Francisco", "UnitedStates", true);
         airport.printDetails();
-        Map<String,String> airlinesMap = new HashMap<String, String>();
-        airlinesMap.put("UN-AL","UnitedAirlines");
-        airlinesMap.put("SP-AL","SingaporeAirlines");
-        airlinesMap.put("EM-AL","EmiratesAirlines");
-        airlinesMap.put("SW-AL","SouthwestAirlines");
-        Printer.print("The map elements are :");
-        airlinesMap.forEach((key, value) -> Printer.print(key + ":" + value));
+
         Printer.print("---------------------------");
 
         Printer.print("Employee Details");
@@ -38,7 +32,7 @@ public class Main {
         AirportEmployee airportEmployee1 = new AirportEmployee("Eliza", 45,
                 new Address("valley drive", "fremont", "california",
                         "95612", "United States"),
-                Gender.FEMALE, 345, 56000.0, Designation.AIRHOSTESS, "NewYork");
+                Gender.FEMALE, 345, 56000.0, Designation.AIRHOSTESS);
         airportEmployee1.printDetails();
 
 
@@ -46,7 +40,7 @@ public class Main {
         Printer.print("Validating Airplane Employee");
         AirplaneEmployee airplaneEmployee1 = new AirplaneEmployee("Ria", 56,
                 new Address("valley drive", "Belmont", "California", "95065", "US"),
-                Gender.FEMALE, 673, 56000.0, Designation.MANAGER, "New jersey");
+                Gender.FEMALE, 673, 56000.0, Designation.MANAGER);
         airplaneEmployee1.printDetails();
         Printer.print("---------------------------");
 
@@ -69,12 +63,7 @@ public class Main {
         }
         catch(InvalidArgumentException  i){
             Printer.error("Flight Error : " +i.getMessage());
-
         }
-        airport.setAirlinesMap(salFlight);
-        airport.setAirlinesMap(unitedFlight);
-        airport.setAirlinesMap(emiratesFlight);
-        airport.setAirlinesMap(southwestFlight);
 
         salFlight.printDiscount();
         salFlight.getNoOfWheels();
@@ -102,7 +91,6 @@ public class Main {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
         }
 
-
         Printer.print("---------------------------");
         southwestFlight.printDiscount();
         Printer.print("Listing Menu and price: ");
@@ -117,6 +105,7 @@ public class Main {
 
         Printer.print("---------------------------");
         emiratesFlight.printDiscount();
+
         Printer.print("Listing Menu and price");
         menuList = new ArrayList<FoodMenu>();
         menuList.add(new FoodMenu(true, "Veg Noodles", 15));
@@ -128,13 +117,19 @@ public class Main {
             Printer.print("Item name : " + menu.getItemName() + "--------------" + menu.getItemPrice());
         }
 
+        // airline fields updated
+        airport.setAirlinesMap(salFlight);
+        airport.setAirlinesMap(unitedFlight);
+        airport.setAirlinesMap(emiratesFlight);
+        airport.setAirlinesMap(southwestFlight);
+
         Printer.print("-----------------------------");
         Printer.print("Validating Address");
         Printer.print("---------------------------");
         Address address = new Address("valley green", "cuper", "CA", "94065", "US");
         Luggage luggage = new Luggage("1234", "AUX12345", "UN-AL", 1);
         Person person = new Person("Ranco", 65, address, Gender.MALE);
-        Passenger passenger = new Passenger(person, luggage);
+        Passenger passenger = new Passenger(luggage,"Antony",56,address,Gender.MALE);
         passenger.printDetails();
         Printer.print("---------------------------");
 
@@ -158,8 +153,8 @@ public class Main {
         Printer.print("---------------------------");
         AirportTicketCounter ticketCounter = new AirportTicketCounter();
         try {
-            Ticket ticketbooked = ticketCounter.bookTicket(ticket1);
-            Ticket ticketbooked1 = ticketCounter.bookTicket(ticket2);
+            Ticket ticketbooked = ticketCounter.bookTicket(salFlight, passenger, 1400.0);
+            Ticket ticketbooked1 = ticketCounter.bookTicket(unitedFlight,passenger,1500);
             Printer.print("The tickets are booked");
             Printer.print("Booked ticket 1 :" + ticketbooked1.getTicketId());
             Printer.print("Booked ticket 2 : " + ticketbooked.getTicketId());
@@ -184,7 +179,7 @@ public class Main {
         AirportEmployee airportEmployee = new AirportEmployee("Nancy");
         AirportEmployee airportEmployee2 = new AirportEmployee("Stacy");
         AirportEmployee airportEmployee3 = new AirportEmployee("fariah",
-                45, address, Gender.FEMALE, 453, 67000.0, Designation.MANAGER, "SFO");
+                45, address, Gender.FEMALE, 453, 67000.0, Designation.MANAGER);
         airportEmployee.setAge(23);
         airportEmployee.setAddress(address);
         airportEmployee.setGender(Gender.FEMALE);
@@ -196,9 +191,8 @@ public class Main {
         Printer.print("Validating for Airplane Employee");
         Printer.print("---------------------------");
         AirplaneEmployee airplaneEmployee = new AirplaneEmployee("Tom", 45, address, Gender.MALE,
-                129, 75000.0, Designation.MANAGER, "SingaporeAirlines");
+                129, 75000.0, Designation.MANAGER);
         airportEmployee.printDetails();
-        Printer.print("The Assigned airplane :" + airplaneEmployee.getAssignedAirplane());
 
         Printer.print("---------------------------");
         Printer.print("Runway status");
@@ -216,11 +210,13 @@ public class Main {
         airportRunway.printDetails();
 
         Printer.print("-----------------------------");
-        //Implementing AirportNotFoundException
+        //Implementing NotFoundException
         try {
             checkAirport(airport);
-        } catch (AirportNotFoundException airportNotFoundException) {
-            Printer.print("Found Exception " + airportNotFoundException.getMessage());
+            checkAirlines(airport);
+            checkAirlinesMenu(airport);
+        } catch (NotFoundException notFoundException) {
+            Printer.print("Exception " + notFoundException.getMessage());
         }
 
         //Implementing LimitExceededException
@@ -251,7 +247,7 @@ public class Main {
         }
     }
 
-    public static void checkAirport(Airport airport) throws AirportNotFoundException {
+    public static void checkAirport(Airport airport) throws NotFoundException {
 
         //Implementing AirportNotFoundException
         Scanner sc = new Scanner(System.in);
@@ -262,10 +258,42 @@ public class Main {
             Printer.print("The details of the airport are:" + airport.printDetails());
         }
         else {
-            throw new AirportNotFoundException(name + "Airport not found");
+            throw new NotFoundException(name + "Airport not found!");
         }
     }
 
+    public static void checkAirlines(Airport airport) throws NotFoundException {
+
+        //Implementing AirlineNotFoundException
+        Scanner sc = new Scanner(System.in);
+        Printer.print("Please enter the airline flight identifier for searching food menu: ");
+        String name = sc.nextLine();
+        Printer.print("searching airline:"+ name);
+        if (airport.getAirlines(name) != null) {
+            airport.getAirlines(name).printDetails();
+        }
+        else {
+            throw new NotFoundException(name + " : Airline not found!");
+        }
+    }
+
+    public static void checkAirlinesMenu(Airport airport) throws NotFoundException{
+        Scanner scanner = new Scanner(System.in);
+        Printer.print("Please enter airline flight identifier :");
+        String name = scanner.nextLine();
+        Printer.print("Searching airline:"+name);
+        if(airport.getAirlines(name) != null){
+            List<FoodMenu> menuList = airport.getAirlines(name).getMenuList();
+            if (menuList == null) {
+                throw new NotFoundException("Exception : Food Menu not available!");
+            }
+            Printer.print(name + " food menu :");
+            for (FoodMenu menu : menuList) {
+                Printer.print("Item name : " + menu.getItemName() + "--------------" + menu.getItemPrice());
+            }
+
+        }
+    }
     public static void testRunwayStatus(RunwayStatus status) {
         // tells the runway status by using different cases
         switch (status) {

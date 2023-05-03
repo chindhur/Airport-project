@@ -2,20 +2,21 @@ package com.impl.airport;
 
 import com.exception.LimitExceededException;
 import com.airport.IItem;
+import com.person.Address;
+import com.person.Gender;
 import com.person.Person;
 import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Passenger implements IItem {
+public class Passenger extends Person implements IItem  {
 
     private static final int MAX_ALLOWED_LUGGAGE = 2;
-    private Person passenger;
     private Luggage luggage;
     private List<String> cabinItems;
 
-    public Passenger(Person passenger, Luggage luggage) {
-        this.passenger = passenger;
+    public Passenger(Luggage luggage,String name, Integer age, Address address, Gender gender) {
+        super(name,age,address,gender);
         this.luggage = luggage;
         this.cabinItems = new ArrayList<String>();
     }
@@ -42,14 +43,6 @@ public class Passenger implements IItem {
         return (cabinItems.contains("explosive"));
     }
 
-    public Person getPassenger() {
-        return passenger;
-    }
-
-    public void setPassenger(Person passenger) {
-        this.passenger = passenger;
-    }
-
     public Luggage getLuggage() {
         return luggage;
     }
@@ -59,18 +52,18 @@ public class Passenger implements IItem {
     }
 
     public void printDetails() {
-        Printer.print("Passenger Name : " + passenger.getName());
+        Printer.print("Passenger Name : " + getName());
         Printer.print("Associated Luggage " + luggage.getLuggageDetails());
     }
 
     public String toString() {
         // return string name of flight
-        return passenger.getName();
+        return getName();
     }
 
     public int hashCode() {
         // return flightId as hashCode as it is unique
         // per object
-        return Integer.valueOf(passenger.getName());
+        return Integer.valueOf(getName());
     }
 }

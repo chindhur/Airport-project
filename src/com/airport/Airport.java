@@ -16,7 +16,9 @@ public class Airport {
     private String area;
     private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
-    private Map<String,String> airlinesMap;
+    // Key -> flightId to ensure  flightId is unique per flight
+    // for given airport and retreive flight details based on ID
+    private Map<String,Flight> airlinesMap;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
@@ -31,7 +33,7 @@ public class Airport {
     public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList){
         this.airportEmployeeList = airportEmployeeList;
         this.airplaneEmployeeList = airplaneEmployeeList;
-        airlinesMap = new HashMap<String, String>();
+        airlinesMap = new HashMap<String, Flight>();
     }
 
     /*constructor*/
@@ -40,19 +42,23 @@ public class Airport {
         this.cityName = cityName;
         this.area = area;
         this.isRunwayOpen = isRunwayOpen;
-        airlinesMap = new HashMap<String, String>();
+        airlinesMap = new HashMap<String, Flight>();
     }
 
-    public Map<String, String> getAirlinesMap() {
+    public Map<String, Flight> getAirlinesMap() {
         return airlinesMap;
+    }
+
+    public Flight getAirlines(String flightId) {
+        return airlinesMap.get(flightId);
     }
 
     public void setAirlinesMap(Flight flight) throws KeyAlreadyExistsException{
         if (airlinesMap.containsKey(flight.getFlightId())) {
             Printer.debug("Map already contains key " + flight.getFlightId());
-            throw new KeyAlreadyExistsException("Flight " + flight.getFlightId() + " already exists.");
+            throw new KeyAlreadyExistsException("Flight " + flight.getFlightId() + " already taken.");
         }
-        this.airlinesMap.put(flight.getFlightId(),flight.getFlightName());
+        this.airlinesMap.put(flight.getFlightId(),flight);
     }
 
     public RunwayStatus getRunway() {

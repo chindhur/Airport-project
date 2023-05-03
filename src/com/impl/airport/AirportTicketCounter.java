@@ -1,5 +1,6 @@
 package com.impl.airport;
 
+import com.airport.Flight;
 import com.exception.NoSeatLeftException;
 import com.airport.ITicketCounter;
 import com.airport.Ticket;
@@ -16,16 +17,17 @@ public class AirportTicketCounter implements ITicketCounter {
         tickets = new ArrayList<Ticket>();
     }
 
-    public Ticket bookTicket(Ticket ticket)
+    public Ticket bookTicket(Flight flight, Passenger passenger, double price)
             throws NoSeatLeftException,IllegalArgumentException {
-        if(ticket == null){
-            throw new IllegalArgumentException("Invalid Ticket");
+        if(flight == null || passenger == null){
+            throw new IllegalArgumentException("Invalid input supplied");
         }
         //Invoking bookASeat method from flight object with in the ticket
         Printer.debug("Booking flight seat");
-        int ticketNumber = ticket.getFlight().bookASeat();
-        String flightId = ticket.getFlight().getFlightId();
+        int ticketNumber = flight.bookASeat();
+        String flightId = flight.getFlightId();
         //updating ticket id to Ticket class
+        Ticket ticket = new Ticket(flight, passenger, price);
         ticket.setTicketId(flightId + ticketNumber);
         tickets.add(ticket);
         Printer.debug("Booked flight seat");
