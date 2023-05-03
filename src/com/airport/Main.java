@@ -248,8 +248,6 @@ public class Main {
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {
-
-        //Implementing AirportNotFoundException
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airport name: ");
         String name = sc.nextLine();
