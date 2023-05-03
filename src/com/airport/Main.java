@@ -261,8 +261,6 @@ public class Main {
     }
 
     public static void checkAirlines(Airport airport) throws NotFoundException {
-
-        //Implementing AirlineNotFoundException
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airline flight identifier for searching food menu: ");
         String name = sc.nextLine();
