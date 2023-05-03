@@ -127,7 +127,7 @@ public class Main {
         Printer.print("Validating Address");
         Printer.print("---------------------------");
         Address address = new Address("valley green", "cuper", "CA", "94065", "US");
-        Luggage luggage = new Luggage("1234", "AUX12345", "UN-AL", 1);
+        Luggage luggage = new Luggage("1234",1);
         Person person = new Person("Ranco", 65, address, Gender.MALE);
         Passenger passenger = new Passenger(luggage,"Antony",56,address,Gender.MALE);
         passenger.printDetails();
