@@ -458,3 +458,1425 @@ The occupied status is :true
 [INFO ] 2023-04-30 21:39:19.464 [main] Printer - AIRPORT: Found Exception TokyoAirport not found
 [ERROR] 2023-04-30 21:39:19.464 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
 [ERROR] 2023-04-30 21:39:19.464 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-01 10:54:29.921 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-01 10:54:29.937 [main] Printer - printing Airport details
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: The map elements are :
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: EM-AL:EmiratesAirlines
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: SP-AL:SingaporeAirlines
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: SW-AL:SouthwestAirlines
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: UN-AL:UnitedAirlines
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Address :com.person.Address@6392827e
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-01 10:54:29.937 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Address :com.person.Address@d5b810e
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:54:29.937 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Address :com.person.Address@342c38f8
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Assocaited Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.952 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-01 10:54:29.968 [main] Printer - Booking flight seat
+[ERROR] 2023-05-01 10:54:29.968 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-01 10:54:29.968 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Address :com.person.Address@729d991e
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Address :com.person.Address@729d991e
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-01 10:54:29.968 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-01 10:54:29.984 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-01 10:54:36.299 [main] Printer - printing Airport details
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: Adding third luggage 
+[INFO ] 2023-05-01 10:54:36.299 [main] Printer - AIRPORT: Added third luggage 
+[ERROR] 2023-05-01 10:54:36.299 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-01 10:57:05.796 [main] Printer - printing Airport details
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: The map elements are :
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: EM-AL:EmiratesAirlines
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: SP-AL:SingaporeAirlines
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: SW-AL:SouthwestAirlines
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: UN-AL:UnitedAirlines
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.796 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Address :com.person.Address@6392827e
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-01 10:57:05.812 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Address :com.person.Address@d5b810e
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Address :com.person.Address@342c38f8
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.812 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Assocaited Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-01 10:57:05.828 [main] Printer - Booking flight seat
+[ERROR] 2023-05-01 10:57:05.828 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-01 10:57:05.828 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Address :com.person.Address@729d991e
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Address :com.person.Address@729d991e
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-01 10:57:05.828 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-01 10:57:05.844 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-01 10:57:05.844 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-01 10:57:05.844 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-01 10:57:11.389 [main] Printer - printing Airport details
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-01 10:57:11.389 [main] Printer - AIRPORT: Adding third luggage 
+[ERROR] 2023-05-01 10:57:11.389 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
+[ERROR] 2023-05-01 10:57:11.389 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-02 10:29:07.756 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.771 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-02 10:29:07.771 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.771 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-02 10:29:07.772 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-02 10:29:07.773 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 10:29:07.773 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 10:29:07.787 [main] Printer - Booking flight seat
+[ERROR] 2023-05-02 10:29:07.787 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.787 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 10:29:07.803 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 10:29:07.803 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-02 10:29:14.413 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-02 10:29:14.413 [main] Printer - AIRPORT: Adding third luggage 
+[ERROR] 2023-05-02 10:29:14.413 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
+[ERROR] 2023-05-02 10:29:14.413 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-02 11:05:07.863 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-02 11:05:07.878 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-02 11:05:07.878 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:05:07.878 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:05:07.894 [main] Printer - Booking flight seat
+[ERROR] 2023-05-02 11:05:07.894 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:05:07.894 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:05:07.894 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:05:07.910 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-02 11:17:50.924 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-02 11:17:50.924 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.924 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-02 11:17:50.940 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.941 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:17:50.956 [main] Printer - Booking flight seat
+[ERROR] 2023-05-02 11:17:50.956 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:17:50.956 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:17:50.956 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-02 11:17:50.964 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:17:50.972 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-02 11:18:07.194 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-02 11:18:07.194 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:18:07.194 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:18:07.194 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:18:07.194 [main] Printer - AIRPORT: Please enter the airline flight identifier: 
+[INFO ] 2023-05-02 11:18:27.339 [main] Printer - AIRPORT: searching airline:un-al
+[INFO ] 2023-05-02 11:18:27.339 [main] Printer - AIRPORT: Exception un-al : Airline not found!
+[INFO ] 2023-05-02 11:18:27.339 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-02 11:18:27.339 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-02 11:18:27.339 [main] Printer - AIRPORT: Adding third luggage 
+[ERROR] 2023-05-02 11:18:27.339 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
+[ERROR] 2023-05-02 11:18:27.351 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-02 11:18:37.653 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-02 11:18:37.653 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-02 11:18:37.653 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.669 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:18:37.685 [main] Printer - Booking flight seat
+[ERROR] 2023-05-02 11:18:37.685 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:18:37.685 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-02 11:18:37.685 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:18:37.701 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-02 11:18:44.130 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-02 11:18:44.130 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:18:44.130 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:18:44.130 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:18:44.130 [main] Printer - AIRPORT: Please enter the airline flight identifier: 
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: searching airline:UN-AL
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: The details of the flight :
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: flight id :UN-AL
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: flight name:UnitedAirlines
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: flight source : Tokyo
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: flight destination : UAE
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-02 11:18:50.382 [main] Printer - AIRPORT: Adding third luggage 
+[ERROR] 2023-05-02 11:18:50.382 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
+[ERROR] 2023-05-02 11:18:50.382 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-02 11:58:29.490 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.490 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-02 11:58:29.490 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.490 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-02 11:58:29.490 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.499 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-02 11:58:29.506 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Passenger Name : Ranco
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-02 11:58:29.506 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:58:29.522 [main] Printer - Booking flight seat
+[ERROR] 2023-05-02 11:58:29.522 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-02 11:58:29.522 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Assigned Airplane SingaporeAirlines
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The Assigned airplane :SingaporeAirlines
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-02 11:58:29.522 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-02 11:58:29.538 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-02 11:59:02.364 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-02 11:59:02.364 [main] Printer - printing Airport details
+[INFO ] 2023-05-02 11:59:02.364 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:59:02.364 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-02 11:59:02.364 [main] Printer - AIRPORT: Please enter the airline flight identifier: 
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: searching airline:SW-AL
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: The details of the flight :
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: flight id :SW-AL
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: flight name:SouthwestAirlines
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: flight source : KL
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: flight destination : Indonesia
+[INFO ] 2023-05-02 11:59:11.921 [main] Printer - AIRPORT: Please enter airline flight identifier :
+[INFO ] 2023-05-02 11:59:29.190 [main] Printer - AIRPORT: Searching airline:EM-AL
+[INFO ] 2023-05-02 11:59:29.190 [main] Printer - AIRPORT: EM-AL food menu :
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-03 08:28:47.452 [main] Printer - printing Airport details
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-03 08:28:47.452 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-03 08:28:47.467 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-03 08:28:47.467 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.472 [main] Printer - AIRPORT: Passenger Name : Antony
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-03 08:28:47.483 [main] Printer - Booking flight seat
+[ERROR] 2023-05-03 08:28:47.483 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-03 08:28:47.483 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-03 08:28:47.483 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-03 08:28:47.499 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-03 08:28:47.499 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-03 08:28:47.499 [main] Printer - AIRPORT: Please enter the airport name: 
+[INFO ] 2023-05-03 08:28:54.434 [main] Printer - AIRPORT: searching airport:sfo
+[DEBUG] 2023-05-03 08:28:54.434 [main] Printer - printing Airport details
+[INFO ] 2023-05-03 08:28:54.434 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-03 08:28:54.434 [main] Printer - AIRPORT: The details of the airport are:
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-03 08:28:54.434 [main] Printer - AIRPORT: Please enter the airline flight identifier: 
+[INFO ] 2023-05-03 08:29:09.828 [main] Printer - AIRPORT: searching airline:UN-AL
+[INFO ] 2023-05-03 08:29:09.828 [main] Printer - AIRPORT: The details of the flight :
+[INFO ] 2023-05-03 08:29:09.830 [main] Printer - AIRPORT: flight id :UN-AL
+[INFO ] 2023-05-03 08:29:09.830 [main] Printer - AIRPORT: flight name:UnitedAirlines
+[INFO ] 2023-05-03 08:29:09.830 [main] Printer - AIRPORT: flight source : Tokyo
+[INFO ] 2023-05-03 08:29:09.830 [main] Printer - AIRPORT: flight destination : UAE
+[INFO ] 2023-05-03 08:29:09.830 [main] Printer - AIRPORT: Please enter airline flight identifier :
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Searching airline:UN-AL
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: UN-AL food menu :
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Item name : Veg Fried Rice--------------15
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Item name : Kids Meals--------------25
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Item name : Chicken Fried Rice--------------20
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Adding Second luggage 
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Added Second luggage 
+[INFO ] 2023-05-03 08:29:22.650 [main] Printer - AIRPORT: Adding third luggage 
+[ERROR] 2023-05-03 08:29:22.650 [main] Printer - ERROR: Luggage Error: No of Luggage limit got exceeded
+[ERROR] 2023-05-03 08:29:22.650 [main] Printer - ERROR: Ticket Error :E:\src\ticket2.txt (The system cannot find the path specified)
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Project AIRPORT
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Airport Details
+[DEBUG] 2023-05-03 08:33:05.953 [main] Printer - printing Airport details
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: 
+airportName : SFO
+ cityName :San Francisco
+ area :UnitedStates
+ The open status of Airport :true
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Employee Details
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Name : Henry
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Age : 32
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: employee id is :123
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Employee salary is :23000.0
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Designation of the employee is:CUSTOMERCARE
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Address :com.person.Address@1b2abca6
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Gender : MALE
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Designation : CUSTOMERCARE
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.953 [main] Printer - AIRPORT: Validating AirportEmployee
+[DEBUG] 2023-05-03 08:33:05.968 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Name : Eliza
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Age : 45
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: employee id is :345
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Designation of the employee is:AIRHOSTESS
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Address :com.person.Address@2ed2d9cb
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Designation : AIRHOSTESS
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Validating Airplane Employee
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Name : Ria
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Age : 56
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: employee id is :673
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Employee salary is :56000.0
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Designation of the employee is:MANAGER
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Address :com.person.Address@43dac38f
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Designation : MANAGER
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Runway status TAKEOFF
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Validating Flight
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Have a Nice and Happy Journey with our Airlines
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Veg Burger------------15
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Pizza------------25
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Chicken Burger------------20
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Listing Menu and price: 
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Veg Fried Rice------------15
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Kids Meals------------25
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item Name : Chicken Fried Rice------------20
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: OFFERS: Seasonal Offer : 20% of on Menu
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Listing Menu and price
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item name : Veg Noodles--------------15
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item name : Pasta--------------20
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item name : Mango MilkShake--------------25
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Item name : Chicken Noodles--------------20
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Validating Address
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Passenger Name : Antony
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Luggage Details { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Associated Luggage { The luggageId is : 1234The PassengerId is :AUX12345The flightId is :UN-AL}
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.968 [main] Printer - AIRPORT: Booking ticket in SA-AL
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The details are :SingaporeAirlines, Bangalore to SFO, ticket price: 1400.0$
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The details are :UnitedAirlines, Tokyo to UAE, ticket price: 1500.0$
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Booking ticket in UN-AL
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The details are :SouthwestAirlines, KL to Indonesia, ticket price: 1600.0$
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Booking ticket in EM-AL
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The details are :SingaporeAirlines, NewYork to Singapore, ticket price: 1300.0$
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Validating Ticket Counter
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-03 08:33:05.984 [main] Printer - Booking flight seat
+[ERROR] 2023-05-03 08:33:05.984 [main] Printer - ERROR: Book Ticket error : SA-AL : There are no seats left to book
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Validating Routes For SFO Route
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The source is: India
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The destination is:SFO
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: No of Flights for this route are:4
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Validating for Airport Employee
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[DEBUG] 2023-05-03 08:33:05.984 [main] Printer - Airport employee initialized
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Validating for Airplane Employee
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Name : Nancy
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Age : 23
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: employee id is :0
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Employee salary is :65000.0
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Designation of the employee is:CARGO_MANAGER
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Address :com.person.Address@1de5f259
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Gender : FEMALE
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Designation : CARGO_MANAGER
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Runway status
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: a plane is taking off!
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Nothing is going on the runway!
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: A plane is landing!
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: ---------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Validating Airport Runway
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: The runway is occupied
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: 
+The runway Number is : 4
+The flightname is :Unitedairlines
+The occupied status is :true
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: -----------------------------
+[INFO ] 2023-05-03 08:33:05.984 [main] Printer - AIRPORT: Please enter the airport name: 
