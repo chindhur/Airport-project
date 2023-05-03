@@ -1,5 +1,6 @@
 package com.airport;
 
+import com.exception.NotFoundException;
 import com.utils.Printer;
 import javax.management.openmbean.KeyAlreadyExistsException;
 import javax.print.attribute.HashAttributeSet;
@@ -16,9 +17,7 @@ public class Airport {
     private String area;
     private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
-    // Key -> flightId to ensure  flightId is unique per flight
-    // for given airport and retreive flight details based on ID
-    private Map<String,Flight> airlinesMap;
+    List<Flight> airlinesList;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
@@ -33,7 +32,7 @@ public class Airport {
     public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList){
         this.airportEmployeeList = airportEmployeeList;
         this.airplaneEmployeeList = airplaneEmployeeList;
-        airlinesMap = new HashMap<String, Flight>();
+        airlinesList = new ArrayList<Flight>();
     }
 
     /*constructor*/
@@ -42,23 +41,21 @@ public class Airport {
         this.cityName = cityName;
         this.area = area;
         this.isRunwayOpen = isRunwayOpen;
-        airlinesMap = new HashMap<String, Flight>();
+        airlinesList = new ArrayList<Flight>();
     }
 
-    public Map<String, Flight> getAirlinesMap() {
-        return airlinesMap;
+    public void setAirlinesList(Flight flight) {
+        airlinesList.add(flight);
     }
 
-    public Flight getAirlines(String flightId) {
-        return airlinesMap.get(flightId);
-    }
-
-    public void setAirlinesMap(Flight flight) throws KeyAlreadyExistsException{
-        if (airlinesMap.containsKey(flight.getFlightId())) {
-            Printer.debug("Map already contains key " + flight.getFlightId());
-            throw new KeyAlreadyExistsException("Flight " + flight.getFlightId() + " already taken.");
+    public Flight getAirlines(String flightId) throws NotFoundException {
+        for(Flight flight: airlinesList) {
+            if (flight.getFlightId().equals(flightId)) {
+                Printer.debug("Found Airline ID matching :" + flight.getFlightId());
+                return flight;
+            }
         }
-        this.airlinesMap.put(flight.getFlightId(),flight);
+        throw new NotFoundException("Error : Flight Identifier "+ flightId + " Not Found!");
     }
 
     public RunwayStatus getRunway() {

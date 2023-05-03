@@ -118,10 +118,10 @@ public class Main {
         }
 
         // airline fields updated
-        airport.setAirlinesMap(salFlight);
-        airport.setAirlinesMap(unitedFlight);
-        airport.setAirlinesMap(emiratesFlight);
-        airport.setAirlinesMap(southwestFlight);
+        airport.setAirlinesList(salFlight);
+        airport.setAirlinesList(unitedFlight);
+        airport.setAirlinesList(emiratesFlight);
+        airport.setAirlinesList(southwestFlight);
 
         Printer.print("-----------------------------");
         Printer.print("Validating Address");
@@ -248,8 +248,6 @@ public class Main {
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {
-
-        //Implementing AirportNotFoundException
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airport name: ");
         String name = sc.nextLine();
@@ -263,8 +261,6 @@ public class Main {
     }
 
     public static void checkAirlines(Airport airport) throws NotFoundException {
-
-        //Implementing AirlineNotFoundException
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airline flight identifier for searching food menu: ");
         String name = sc.nextLine();
