@@ -1,5 +1,7 @@
 package com.airport;
 
+import com.utils.Printer;
+
 public class FoodMenu {
 
     Boolean isVeg = false;
@@ -28,7 +30,7 @@ public class FoodMenu {
         this.itemName = itemName;
     }
 
-    public Integer getItemPrice() {
+    public Integer getItemPrice(){
         return itemPrice;
     }
 
