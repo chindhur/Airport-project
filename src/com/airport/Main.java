@@ -2,9 +2,12 @@ package com.airport;
 
 import com.exception.*;
 import com.airport.*;
+import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
+import com.people.Passenger;
+import com.airport.Airport;
 import java.util.*;
 
 public class Main {
@@ -16,8 +19,8 @@ public class Main {
         Printer.print("Airport Details");
         Airport airport = new Airport("SFO",
                 "San Francisco", "UnitedStates", true);
+        airport.toString();
         airport.printDetails();
-
         Printer.print("---------------------------");
 
         Printer.print("Employee Details");
@@ -32,7 +35,7 @@ public class Main {
         AirportEmployee airportEmployee1 = new AirportEmployee("Eliza", 45,
                 new Address("valley drive", "fremont", "california",
                         "95612", "United States"),
-                Gender.FEMALE, 345, 56000.0, Designation.AIRHOSTESS);
+                Gender.FEMALE, 345, 56000.0, Designation.MANAGER);
         airportEmployee1.printDetails();
 
 
@@ -40,7 +43,7 @@ public class Main {
         Printer.print("Validating Airplane Employee");
         AirplaneEmployee airplaneEmployee1 = new AirplaneEmployee("Ria", 56,
                 new Address("valley drive", "Belmont", "California", "95065", "US"),
-                Gender.FEMALE, 673, 56000.0, Designation.MANAGER);
+                Gender.FEMALE, 673, 56000.0, Designation.AIRHOSTESS);
         airplaneEmployee1.printDetails();
         Printer.print("---------------------------");
 
@@ -55,21 +58,19 @@ public class Main {
         Flight unitedFlight = null;
         Flight emiratesFlight = null;
         Flight southwestFlight = null;
-        try{
-            salFlight = new Flight("SA-AL", "Bangalore", "SFO", 70,"SingaporeAirlines");
-            unitedFlight = new Flight("UN-AL", "Tokyo", "UAE", 0,"UnitedAirlines");
-            emiratesFlight = new Flight("EM-AL", "NewYork", "Singapore", 67,"SingaporeAirlines");
-            southwestFlight = new Flight("SW-AL", "KL", "Indonesia", 45,"SouthwestAirlines");
-        }
-        catch(InvalidArgumentException  i){
-            Printer.error("Flight Error : " +i.getMessage());
+        try {
+            salFlight = new Flight("SA-AL", "Bangalore", "SFO", 70, "SingaporeAirlines");
+            unitedFlight = new Flight("UN-AL", "Tokyo", "UAE", 0, "UnitedAirlines");
+            emiratesFlight = new Flight("EM-AL", "NewYork", "Singapore", 67, "SingaporeAirlines");
+            southwestFlight = new Flight("SW-AL", "KL", "Indonesia", 45, "SouthwestAirlines");
+        } catch (InvalidArgumentException i) {
+            Printer.error("Flight Error : " + i.getMessage());
         }
 
         salFlight.printDiscount();
         salFlight.getNoOfWheels();
         Printer.print("Listing Menu and price: ");
         List<FoodMenu> menuList = new ArrayList<FoodMenu>();
-
         menuList.add(new FoodMenu(true, "Veg Burger", 15));
         menuList.add(new FoodMenu(true, "Pizza", 25));
         menuList.add(new FoodMenu(false, "Chicken Burger", 20));
@@ -127,17 +128,59 @@ public class Main {
         Printer.print("Validating Address");
         Printer.print("---------------------------");
         Address address = new Address("valley green", "cuper", "CA", "94065", "US");
-        Luggage luggage = new Luggage("1234",1);
+        Luggage luggage = new Luggage("1234", 1);
         Person person = new Person("Ranco", 65, address, Gender.MALE);
-        Passenger passenger = new Passenger(luggage,"Antony",56,address,Gender.MALE);
+        Passenger passenger = new Passenger(luggage, "Antony", 56, address, Gender.MALE);
         passenger.printDetails();
+        Printer.print("---------------------------");
+
+        Printer.print("----------------------------");
+        //Linkedlist implementation
+        //adding passengers
+        CustomLinkedList<Passenger> passengerList = new CustomLinkedList<Passenger>();
+        Passenger passenger1 = new Passenger(new Luggage("4567",1),
+                "Bob",45,new Address("thomas street","san roman","california","98756","united states"),Gender.MALE);
+        Passenger passenger2 = new Passenger(luggage,"Adam",32,address,Gender.MALE);
+        Passenger passenger3 = new Passenger(luggage,"Roger",29,address,Gender.MALE);
+        Passenger passenger4 = new Passenger(luggage,"Alia",45,address,Gender.FEMALE);
+        passengerList.add(passenger1);
+        passengerList.add(passenger2);
+        passengerList.add(passenger3);
+        passengerList.add(passenger4);
+
+        //remove passenger
+        try {
+            passengerList.remove(passenger2);
+        }
+        catch(NotFoundException notFoundException){
+            Printer.print("not found"+notFoundException.getMessage());
+        }
+        Printer.print("Removed passenger:"+passenger2.getName());
+
+        //get Index
+        try{
+            passengerList.get(1);
+        }
+        catch (IndexOutOfBoundsException e){
+            Printer.print("Not found" +e.getMessage());
+        }
+        catch(NotFoundException e){
+            Printer.print("Not found: "+ e.getMessage());
+        }
+
+        //size
+        Printer.print("The size of the list is :"+ passengerList.size());
+
+        //print details
+        Printer.print("The list of passengers added :");
+        passengerList.printNodes();
         Printer.print("---------------------------");
 
         Printer.print("Validating Ticket Counter");
         Printer.print("---------------------------");
         Printer.print("Booking ticket in " + salFlight.getFlightId());
         Ticket ticket1 = new Ticket(salFlight, passenger, 1400.0);
-        Printer.print( ticket1.toString());
+        Printer.print(ticket1.toString());
         Printer.print("Booking ticket in " + unitedFlight.getFlightId());
         Ticket ticket2 = new Ticket(unitedFlight, passenger, 1500.0);
         Printer.print(ticket2.toString());
@@ -154,7 +197,7 @@ public class Main {
         AirportTicketCounter ticketCounter = new AirportTicketCounter();
         try {
             Ticket ticketbooked = ticketCounter.bookTicket(salFlight, passenger, 1400.0);
-            Ticket ticketbooked1 = ticketCounter.bookTicket(unitedFlight,passenger,1500);
+            Ticket ticketbooked1 = ticketCounter.bookTicket(unitedFlight, passenger, 1500);
             Printer.print("The tickets are booked");
             Printer.print("Booked ticket 1 :" + ticketbooked1.getTicketId());
             Printer.print("Booked ticket 2 : " + ticketbooked.getTicketId());
@@ -205,7 +248,7 @@ public class Main {
 
         Printer.print("---------------------------");
         Printer.print("Validating Airport Runway");
-        AirportRunway airportRunway = new AirportRunway("4","Unitedairlines",true);
+        AirportRunway airportRunway = new AirportRunway("4", "Unitedairlines", true);
         airportRunway.printOccupiedStatus();
         airportRunway.printDetails();
 
@@ -243,7 +286,7 @@ public class Main {
             ticket1.writeTicketToFile("ticket.txt");
             ticket2.writeTicketToFile("E:/src/ticket2.txt");
         } catch (PrintException p) {
-            Printer.error ("Ticket Error :" + p.getMessage());
+            Printer.error("Ticket Error :" + p.getMessage());
         }
     }
 
@@ -251,11 +294,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airport name: ");
         String name = sc.nextLine();
-        Printer.print("searching airport:"+name);
+        Printer.print("searching airport:" + name);
         if (airport.getAirportName().equalsIgnoreCase(name)) {
             Printer.print("The details of the airport are:" + airport.printDetails());
-        }
-        else {
+        } else {
             throw new NotFoundException(name + "Airport not found!");
         }
     }
@@ -264,21 +306,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Printer.print("Please enter the airline flight identifier for searching food menu: ");
         String name = sc.nextLine();
-        Printer.print("searching airline:"+ name);
+        Printer.print("searching airline:" + name);
         if (airport.getAirlines(name) != null) {
             airport.getAirlines(name).printDetails();
-        }
-        else {
+        } else {
             throw new NotFoundException(name + " : Airline not found!");
         }
     }
 
-    public static void checkAirlinesMenu(Airport airport) throws NotFoundException{
+    public static void checkAirlinesMenu(Airport airport) throws NotFoundException {
         Scanner scanner = new Scanner(System.in);
         Printer.print("Please enter airline flight identifier :");
         String name = scanner.nextLine();
-        Printer.print("Searching airline:"+name);
-        if(airport.getAirlines(name) != null){
+        Printer.print("Searching airline:" + name);
+        if (airport.getAirlines(name) != null) {
             List<FoodMenu> menuList = airport.getAirlines(name).getMenuList();
             if (menuList == null) {
                 throw new NotFoundException("Exception : Food Menu not available!");
@@ -290,6 +331,10 @@ public class Main {
 
         }
     }
+
+
+
+
     public static void testRunwayStatus(RunwayStatus status) {
         // tells the runway status by using different cases
         switch (status) {

@@ -2,7 +2,6 @@ package com.airport;
 
 import com.exception.NotFoundException;
 import com.utils.Printer;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,7 +82,6 @@ public class Airport {
     }
 
     public String printDetails() {
-        Printer.debug("printing Airport details");
         String flight =  System.lineSeparator()+
                         "airportName : " + airportName + System.lineSeparator()+
                         " cityName :" + cityName + System.lineSeparator()+
@@ -117,18 +115,26 @@ public class Airport {
         this.area = area;
     }
 
+    @Override
+    public String toString() {
+        return "Airport{" +
+                "airportName='" + airportName + '\'' +
+                ", cityName='" + cityName + '\'' +
+                ", area='" + area + '\'' +
+                ", isRunwayOpen=" + isRunwayOpen +
+                ", runway=" + runway +
+                ", airlinesList=" + airlinesList +
+                ", airportEmployeeList=" + airportEmployeeList +
+                ", airplaneEmployeeList=" + airplaneEmployeeList +
+                '}';
+    }
+
     public String getAirportName() {
         return airportName;
     }
 
     public void setAirportName(String airportName) {
         this.airportName = airportName;
-    }
-
-    @Override
-    public String toString() {
-        // return string name of flight
-        return airportName;
     }
 
     @Override

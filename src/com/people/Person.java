@@ -8,7 +8,6 @@ public class Person {
     protected Integer age;
     protected Address address;
     protected Gender gender;
-    protected String emailId;
 
     public Person(String name) {
         this.name = name;
@@ -20,14 +19,6 @@ public class Person {
         this.age = age;
         this.address = address;
         this.gender = gender;
-    }
-
-    public String getEmailId() {
-        return emailId;
-    }
-
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
     }
 
     public void printBasicDetails() {
@@ -65,6 +56,16 @@ public class Person {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                ", gender=" + gender +
+                '}';
     }
 
     @Override

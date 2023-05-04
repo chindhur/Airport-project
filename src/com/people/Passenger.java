@@ -5,6 +5,7 @@ import com.interfaces.IItem;
 import com.airport.Luggage;
 import com.utils.Printer;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Passenger extends Person implements IItem  {
@@ -12,6 +13,7 @@ public class Passenger extends Person implements IItem  {
     private static final int MAX_ALLOWED_LUGGAGE = 2;
     private Luggage luggage;
     private List<String> cabinItems;
+
 
     public Passenger(Luggage luggage,String name, Integer age, Address address, Gender gender) {
         super(name,age,address,gender);
@@ -54,9 +56,14 @@ public class Passenger extends Person implements IItem  {
         Printer.print("Associated Luggage " + luggage.getLuggageDetails());
     }
 
+    @Override
     public String toString() {
-        // return string name of flight
-        return getName();
+        return "Passenger{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", address=" + address +
+                ", gender=" + gender +
+                '}';
     }
 
     public int hashCode() {
