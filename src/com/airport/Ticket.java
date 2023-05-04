@@ -1,6 +1,6 @@
 package com.airport;
 
-import com.impl.airport.Passenger;
+import com.people.Passenger;
 
 import javax.print.PrintException;
 import java.io.FileWriter;

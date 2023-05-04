@@ -1,8 +1,8 @@
 package com.airport;
 
 import com.exception.*;
-import com.impl.airport.*;
-import com.person.*;
+import com.airport.*;
+import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
 import java.util.*;

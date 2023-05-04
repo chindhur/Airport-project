@@ -1,4 +1,4 @@
-package com.airport;
+package com.interfaces;
 
 public interface IItem {
 

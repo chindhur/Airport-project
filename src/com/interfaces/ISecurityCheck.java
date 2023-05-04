@@ -1,7 +1,7 @@
-package com.airport;
+package com.interfaces;
 
-import com.impl.airport.Luggage;
-import com.impl.airport.Passenger;
+import com.airport.Luggage;
+import com.people.Passenger;
 
 public interface ISecurityCheck {
 

@@ -1,9 +1,8 @@
-package com.impl.airport;
+package com.airport;
 
-import com.airport.Flight;
 import com.exception.NoSeatLeftException;
-import com.airport.ITicketCounter;
-import com.airport.Ticket;
+import com.interfaces.ITicketCounter;
+import com.people.Passenger;
 import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.List;

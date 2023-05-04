@@ -2,13 +2,9 @@ package com.airport;
 
 import com.exception.NotFoundException;
 import com.utils.Printer;
-import javax.management.openmbean.KeyAlreadyExistsException;
-import javax.print.attribute.HashAttributeSet;
+
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import com.airport.Flight;
 
 public class Airport {
 
@@ -49,7 +45,8 @@ public class Airport {
     }
 
     public Flight getAirlines(String flightId) throws NotFoundException {
-        for(Flight flight: airlinesList) {
+        for(int i=0; i<airlinesList.size(); i++) {
+            Flight flight = airlinesList.get(i);
             if (flight.getFlightId().equals(flightId)) {
                 Printer.debug("Found Airline ID matching :" + flight.getFlightId());
                 return flight;

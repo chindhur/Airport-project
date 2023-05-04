@@ -1,10 +1,9 @@
 package com.airport;
 
-import com.person.Address;
-import com.person.Designation;
-import com.person.Employee;
-import com.person.Gender;
-import com.utils.Printer;
+import com.people.Address;
+import com.people.Designation;
+import com.people.Employee;
+import com.people.Gender;
 
 public class AirplaneEmployee extends Employee {
 

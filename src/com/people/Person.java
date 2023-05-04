@@ -1,4 +1,4 @@
-package com.person;
+package com.people;
 
 import com.utils.Printer;
 

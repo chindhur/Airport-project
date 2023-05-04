@@ -1,7 +1,7 @@
 
-package com.impl.airport;
+package com.airport;
 
-import com.airport.IRunway;
+import com.interfaces.IRunway;
 import com.utils.Printer;
 
 public class AirportRunway implements IRunway {

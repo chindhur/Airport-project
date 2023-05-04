@@ -1,4 +1,4 @@
-package com.person;
+package com.people;
 
 import com.exception.InvalidEmployeeIdException;
 import com.utils.Printer;

@@ -1,10 +1,8 @@
-package com.impl.airport;
+package com.people;
 
 import com.exception.LimitExceededException;
-import com.airport.IItem;
-import com.person.Address;
-import com.person.Gender;
-import com.person.Person;
+import com.interfaces.IItem;
+import com.airport.Luggage;
 import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.List;
