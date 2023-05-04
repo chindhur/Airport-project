@@ -1,25 +1,14 @@
 package com.airport;
 
-import com.person.Employee;
-import com.utils.Printer;
+import com.people.Address;
+import com.people.Designation;
+import com.people.Employee;
+import com.people.Gender;
 
-class AirplaneEmployee extends Employee {
-    String assignedAirplane = "Not Assigned";
+public class AirplaneEmployee extends Employee {
 
-    public AirplaneEmployee(String assignedAirplane) {
-        this.assignedAirplane = assignedAirplane;
-    }
-
-    public AirplaneEmployee(){
-    }
-
-    public void setAssignedAirplane(String assignedAirplane) {
-        this.assignedAirplane = assignedAirplane;
-    }
-
-    public String getAssignedAirplane(){
-        Printer.print("Assigned Airplane " + assignedAirplane);
-        return assignedAirplane;
-
+    public AirplaneEmployee(String name, Integer age, Address address, Gender gender,
+                            int employeeId, Double employeeSalary, Designation designation) {
+        super(name, age, address, gender, employeeId, employeeSalary, designation);
     }
 }

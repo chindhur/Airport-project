@@ -1,52 +1,49 @@
 package com.airport;
 
+import com.interfaces.IItem;
 import com.utils.Printer;
+import java.util.ArrayList;
+import java.util.List;
 
-class Luggage {
-    private String flightId;
+public final class Luggage implements IItem {
+
+    private List<String> checkinItems;
     private String luggageId;
-    private String passengerId;
-    private Integer noOfLuggages;
+    private int noOfLuggage = 0;
 
     /*constructor*/
-    public Luggage(String luggageId, String passengerId, String flightId, Integer noOfLuggages) {
+    public Luggage(String luggageId, int noOfLuggage) {
         this.luggageId = luggageId;
-        this.passengerId = passengerId;
-        this.flightId = flightId;
-        this.noOfLuggages = noOfLuggages;
-
+        this.checkinItems = new ArrayList<String>();
+        this.noOfLuggage = noOfLuggage;
     }
 
-    public String getFlightId() {
-        return flightId;
+    public void setCheckinItems(List<String> checkinItems) {
+        this.checkinItems = checkinItems;
     }
 
-    public void setFlightId(String flightId) {
-        this.flightId = flightId;
+    public void addItem(String item) {
+        checkinItems.add(item);
     }
 
-    public void setLuggageId(String luggageId) {
-        this.luggageId = luggageId;
+    public void removeItem(String item) {
+        checkinItems.remove(item);
     }
 
-    public void setPassengerId(String passengerId) {
-        this.passengerId = passengerId;
+    public Boolean hasMetalObject() {
+        return (checkinItems.contains("metal"));
     }
 
-    public void setNoOfLuggages(Integer noOfLuggages) {
-        this.noOfLuggages = noOfLuggages;
+    public Boolean hasExplosiveObject() {
+        return (checkinItems.contains("Explosives"));
     }
 
 
     /*method to get luggagedetails*/
     public String getLuggageDetails() {
-        String details = "{ " +
-                "The luggageId is : " + luggageId +
-                "The PassengerId is :" + passengerId +
-                "The flightId is :" + flightId +
-                "Total number of luggages are :" + noOfLuggages
-                + "}";
-        Printer.print("Luggage Details " + details);
+        String details = ("The luggageId is : " + luggageId + System.lineSeparator()+
+                "Number Of Luggages :" + noOfLuggage);
+        Printer.print(" Details " + details);
         return details;
     }
 
@@ -54,11 +51,15 @@ class Luggage {
         return luggageId;
     }
 
-    public String getPassengerId() {
-        return passengerId;
+    public void setLuggageId(String luggageId) {
+        this.luggageId = luggageId;
     }
 
-    public Integer getNoOfLuggages() {
-        return noOfLuggages;
+    public int getNoOfLuggage() {
+        return noOfLuggage;
+    }
+
+    public void setNoOfLuggage(int noOfLuggage) {
+        this.noOfLuggage = noOfLuggage;
     }
 }

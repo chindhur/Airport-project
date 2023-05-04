@@ -1,13 +1,14 @@
-package com.person;
+package com.people;
 
 public class Address {
+
     private String street;
     private String city;
     private String state;
     private String zipcode;
     private String country;
-    public Address() {
-    }
+
+    /*constructor*/
     public Address(String street, String city, String state, String zipcode, String country) {
         this.street = street;
         this.city = city;
@@ -58,7 +59,7 @@ public class Address {
 
     public String getaddress() {
         return "Address{" +
-                "street:" +street +
+                "street:" + street +
                 "city :" + city +
                 "state :" + state +
                 "country :" + country +
