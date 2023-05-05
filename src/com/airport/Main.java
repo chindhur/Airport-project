@@ -331,10 +331,6 @@ public class Main {
 
         }
     }
-
-
-
-
     public static void testRunwayStatus(RunwayStatus status) {
         // tells the runway status by using different cases
         switch (status) {
