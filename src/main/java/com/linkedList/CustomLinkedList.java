@@ -6,27 +6,6 @@ import com.utils.Printer;
 
 // CustomLinked List implements IList Interface
 public class CustomLinkedList<T> implements IList<T> {
-    // LinkedList Node
-    private class Node {
-        
-        private final T data;
-        private Node next;
-
-        public Node(T data) {
-            super();
-            this.data = data;
-        }
-        public Node getNext() {
-            return next;
-        }
-        public void setNext(Node next) {
-            this.next = next;
-        }
-        public T getData() {
-            return data;
-        }
-    }
-
     // first element
     private Node head;
     // last element
@@ -39,15 +18,15 @@ public class CustomLinkedList<T> implements IList<T> {
     public boolean add(T data) {
 
         Node node = new Node(data);
-        
+
         // List is empty, add first and mark head and tail
-        if(this.head==null) {
+        if (this.head == null) {
             head = node;
-            tail=head;
+            tail = head;
             counter++;
             Printer.debug("node added as head");
             return true;
-        }else {
+        } else {
             // Add node to end of list
             tail.setNext(node);
             tail = node;
@@ -59,27 +38,27 @@ public class CustomLinkedList<T> implements IList<T> {
 
     // obtain the node at specified index
     @Override
-    public T get(int index) throws NotFoundException,IndexOutOfBoundsException {
-        
+    public T get(int index) throws NotFoundException, IndexOutOfBoundsException {
+
         T data = null;
         Node temp = head;
         int counter = 0;
 
-        if(head==null) {
+        if (head == null) {
             throw new NotFoundException("List is empty");
         }
-        if(index >= this.counter) {
+        if (index >= this.counter) {
             throw new IndexOutOfBoundsException("Index greater than list size");
         }
         // Check first or last node for index
-        if(index == counter) {
+        if (index == counter) {
             data = head.getData();
-        } else if (index == (counter-1)) {
+        } else if (index == (counter - 1)) {
             data = tail.getData();
         } else {
             // loop through the list
-            while(temp != null) {
-                if(counter == index) {
+            while (temp != null) {
+                if (counter == index) {
                     data = temp.getData();
                     break;
                 }
@@ -94,24 +73,24 @@ public class CustomLinkedList<T> implements IList<T> {
     @Override
     public boolean remove(T data) throws NotFoundException {
 
-        if(head==null) {
+        if (head == null) {
             throw new NotFoundException("List is empty");
         }
 
-        if(head.getData().equals(data)) {
+        if (head.getData().equals(data)) {
             Node temp = head;
             head = temp.getNext();
             temp = null;
             this.counter--;
             Printer.debug("node deleted from head");
             return true;
-        }else {
+        } else {
             Node temp = head.getNext();
             Node prev = head;
             int index = 0;
             // Iterating over the list to identify data
-            while(temp!=null) {
-                if(temp.getData().equals(data)) {
+            while (temp != null) {
+                if (temp.getData().equals(data)) {
                     prev.setNext(temp.getNext());
                     temp = null;
                     this.counter--;
@@ -119,7 +98,7 @@ public class CustomLinkedList<T> implements IList<T> {
                 }
                 index++;
                 prev = temp;
-                temp =  temp.getNext();
+                temp = temp.getNext();
                 Printer.debug("node deleted at " + index);
                 return true;
             }
@@ -131,9 +110,9 @@ public class CustomLinkedList<T> implements IList<T> {
     public void printNodes() {
         Node temp = head;
         Printer.print("{ ");
-        while(temp!=null) {
-            Printer.print(temp.getData()+" ");
-            temp= temp.getNext();
+        while (temp != null) {
+            Printer.print(temp.getData() + " ");
+            temp = temp.getNext();
         }
         Printer.print(" }");
     }
@@ -144,4 +123,27 @@ public class CustomLinkedList<T> implements IList<T> {
         return this.counter;
     }
 
+    // LinkedList Node
+    private class Node {
+
+        private final T data;
+        private Node next;
+
+        public Node(T data) {
+            super();
+            this.data = data;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public T getData() {
+            return data;
+        }
+    }
 }
