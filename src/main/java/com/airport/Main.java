@@ -38,7 +38,6 @@ public class Main {
                 Gender.FEMALE, 345, 56000.0, Designation.MANAGER);
         airportEmployee1.printDetails();
 
-
         Printer.print("---------------------------");
         Printer.print("Validating Airplane Employee");
         AirplaneEmployee airplaneEmployee1 = new AirplaneEmployee("Ria", 56,
@@ -83,7 +82,6 @@ public class Main {
         unitedFlight.printDiscount();
         Printer.print("Listing Menu and price: ");
         menuList = new ArrayList<FoodMenu>();
-
         menuList.add(new FoodMenu(true, "Veg Fried Rice", 15));
         menuList.add(new FoodMenu(true, "Kids Meals", 25));
         menuList.add(new FoodMenu(false, "Chicken Fried Rice", 20));
@@ -106,7 +104,6 @@ public class Main {
 
         Printer.print("---------------------------");
         emiratesFlight.printDiscount();
-
         Printer.print("Listing Menu and price");
         menuList = new ArrayList<FoodMenu>();
         menuList.add(new FoodMenu(true, "Veg Noodles", 15));
@@ -148,6 +145,11 @@ public class Main {
         passengerList.add(passenger3);
         passengerList.add(passenger4);
 
+        airport.addPassenger(passenger1);
+        airport.addPassenger(passenger2);
+        airport.addPassenger(passenger3);
+        airport.addPassenger(passenger4);
+
         //remove passenger
         try {
             passengerList.remove(passenger2);
@@ -174,8 +176,8 @@ public class Main {
         //print details
         Printer.print("The list of passengers added :");
         passengerList.printNodes();
-        Printer.print("---------------------------");
 
+        Printer.print("---------------------------");
         Printer.print("Validating Ticket Counter");
         Printer.print("---------------------------");
         Printer.print("Booking ticket in " + salFlight.getFlightId());
@@ -204,8 +206,8 @@ public class Main {
         } catch (IllegalArgumentException | NoSeatLeftException exp) {
             Printer.error("Book Ticket error : " + exp.getMessage());
         }
-        Printer.print("---------------------------");
 
+        Printer.print("---------------------------");
         Printer.print("Validating Routes For SFO Route");
         Printer.print("---------------------------");
         Route sfoRoute = new Route("India", "SFO", 4);
@@ -240,7 +242,6 @@ public class Main {
         Printer.print("---------------------------");
         Printer.print("Runway status");
         Printer.print("---------------------------");
-
         testRunwayStatus(RunwayStatus.TAKEOFF);
         testRunwayStatus(RunwayStatus.IDLE);
         testRunwayStatus(RunwayStatus.LANDING);
@@ -331,9 +332,6 @@ public class Main {
 
         }
     }
-
-
-
 
     public static void testRunwayStatus(RunwayStatus status) {
         // tells the runway status by using different cases

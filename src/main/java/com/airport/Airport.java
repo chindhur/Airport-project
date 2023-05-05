@@ -1,8 +1,11 @@
 package com.airport;
 
 import com.exception.NotFoundException;
+import com.linkedList.CustomLinkedList;
+import com.people.Passenger;
 import com.utils.Printer;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Airport {
@@ -13,6 +16,7 @@ public class Airport {
     private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
     List<Flight> airlinesList;
+    CustomLinkedList<Passenger> passengerList;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
@@ -28,6 +32,7 @@ public class Airport {
         this.airportEmployeeList = airportEmployeeList;
         this.airplaneEmployeeList = airplaneEmployeeList;
         airlinesList = new ArrayList<Flight>();
+        passengerList = new CustomLinkedList<Passenger>();
     }
 
     /*constructor*/
@@ -37,6 +42,7 @@ public class Airport {
         this.area = area;
         this.isRunwayOpen = isRunwayOpen;
         airlinesList = new ArrayList<Flight>();
+        passengerList = new CustomLinkedList<Passenger>();
     }
 
     public void setAirlinesList(Flight flight) {
@@ -52,6 +58,22 @@ public class Airport {
             }
         }
         throw new NotFoundException("Error : Flight Identifier "+ flightId + " Not Found!");
+    }
+
+    public Passenger getPassenger(String firstName) throws NotFoundException{
+        // loop passengerlist n find passenger;
+        for(int i=0;i< passengerList.size();i++){
+            Passenger passenger = passengerList.get(i);
+            if(passenger.getName().equals(firstName)){
+                Printer.debug("Found passenger name matching:"+passenger.getName());
+                return passenger;
+            }
+        }
+        throw new NotFoundException("Error : Name Identifier " + firstName + "Not found");
+    }
+
+    public void addPassenger(Passenger passenger) {
+      passengerList.add(passenger);
     }
 
     public RunwayStatus getRunway() {
