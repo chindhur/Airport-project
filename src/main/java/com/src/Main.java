@@ -1,4 +1,4 @@
-package com.airport;
+package com.src;
 
 import com.exception.*;
 import com.airport.*;
@@ -135,11 +135,11 @@ public class Main {
         //Linkedlist implementation
         //adding passengers
         CustomLinkedList<Passenger> passengerList = new CustomLinkedList<Passenger>();
-        Passenger passenger1 = new Passenger(new Luggage("4567",1),
-                "Bob",45,new Address("thomas street","san roman","california","98756","united states"),Gender.MALE);
-        Passenger passenger2 = new Passenger(luggage,"Adam",32,address,Gender.MALE);
-        Passenger passenger3 = new Passenger(luggage,"Roger",29,address,Gender.MALE);
-        Passenger passenger4 = new Passenger(luggage,"Alia",45,address,Gender.FEMALE);
+        Passenger passenger1 = new Passenger(new Luggage("4567", 1),
+                "Bob", 45, new Address("thomas street", "san roman", "california", "98756", "united states"), Gender.MALE);
+        Passenger passenger2 = new Passenger(luggage, "Adam", 32, address, Gender.MALE);
+        Passenger passenger3 = new Passenger(luggage, "Roger", 29, address, Gender.MALE);
+        Passenger passenger4 = new Passenger(luggage, "Alia", 45, address, Gender.FEMALE);
         passengerList.add(passenger1);
         passengerList.add(passenger2);
         passengerList.add(passenger3);
@@ -153,25 +153,22 @@ public class Main {
         //remove passenger
         try {
             passengerList.remove(passenger2);
+        } catch (NotFoundException notFoundException) {
+            Printer.print("not found" + notFoundException.getMessage());
         }
-        catch(NotFoundException notFoundException){
-            Printer.print("not found"+notFoundException.getMessage());
-        }
-        Printer.print("Removed passenger:"+passenger2.getName());
+        Printer.print("Removed passenger:" + passenger2.getName());
 
         //get Index
-        try{
+        try {
             passengerList.get(1);
-        }
-        catch (IndexOutOfBoundsException e){
-            Printer.print("Not found" +e.getMessage());
-        }
-        catch(NotFoundException e){
-            Printer.print("Not found: "+ e.getMessage());
+        } catch (IndexOutOfBoundsException e) {
+            Printer.print("Not found" + e.getMessage());
+        } catch (NotFoundException e) {
+            Printer.print("Not found: " + e.getMessage());
         }
 
         //size
-        Printer.print("The size of the list is :"+ passengerList.size());
+        Printer.print("The size of the list is :" + passengerList.size());
 
         //print details
         Printer.print("The list of passengers added :");
@@ -222,9 +219,7 @@ public class Main {
         Printer.print("Validating for Airport Employee");
         Printer.print("---------------------------");
         AirportEmployee airportEmployee = new AirportEmployee("Nancy");
-        AirportEmployee airportEmployee2 = new AirportEmployee("Stacy");
-        AirportEmployee airportEmployee3 = new AirportEmployee("fariah",
-                45, address, Gender.FEMALE, 453, 67000.0, Designation.MANAGER);
+        45, address, Gender.FEMALE, 453, 67000.0, Designation.MANAGER);
         airportEmployee.setAge(23);
         airportEmployee.setAddress(address);
         airportEmployee.setGender(Gender.FEMALE);
@@ -237,7 +232,7 @@ public class Main {
         Printer.print("---------------------------");
         AirplaneEmployee airplaneEmployee = new AirplaneEmployee("Tom", 45, address, Gender.MALE,
                 129, 75000.0, Designation.MANAGER);
-        airportEmployee.printDetails();
+        airplaneEmployee.printDetails();
 
         Printer.print("---------------------------");
         Printer.print("Runway status");
