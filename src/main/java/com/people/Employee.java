@@ -25,12 +25,13 @@ public class Employee extends Person {
     /*method to get employeedetails*/
     public void printDetails() {
         super.printBasicDetails();
+        Printer.print("Name of the employee is :"+name);
         Printer.print("employee id is :" + employeeId);
         Printer.print("Employee salary is :" + employeeSalary);
         Printer.print("Designation of the employee is:" + designation);
+        Printer.print("Age of the employee is ;"+age);
         Printer.print("Address :" + super.getAddress());
         Printer.print("Gender : " + super.getGender());
-        Printer.print("Designation : " + designation.toString());
     }
 
     public int getEmployeeId() {
