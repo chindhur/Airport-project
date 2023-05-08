@@ -32,6 +32,7 @@ public class Main {
 
         Printer.print("---------------------------");
         Printer.print("Validating AirportEmployee");
+        Printer.print("----------------------------");
         AirportEmployee airportEmployee1 = new AirportEmployee("Eliza", 45,
                 new Address("valley drive", "fremont", "california",
                         "95612", "United States"),
@@ -40,6 +41,7 @@ public class Main {
 
         Printer.print("---------------------------");
         Printer.print("Validating Airplane Employee");
+        Printer.print("-----------------------------");
         AirplaneEmployee airplaneEmployee1 = new AirplaneEmployee("Ria", 56,
                 new Address("valley drive", "Belmont", "California", "95065", "US"),
                 Gender.FEMALE, 673, 56000.0, Designation.AIRHOSTESS);
@@ -216,25 +218,6 @@ public class Main {
         Printer.print("No of Flights for this route are:" + sfoRoute.getNoOfFlights());
 
         Printer.print("---------------------------");
-        Printer.print("Validating for Airport Employee");
-        Printer.print("---------------------------");
-        AirportEmployee airportEmployee = new AirportEmployee("Nancy");
-        45, address, Gender.FEMALE, 453, 67000.0, Designation.MANAGER);
-        airportEmployee.setAge(23);
-        airportEmployee.setAddress(address);
-        airportEmployee.setGender(Gender.FEMALE);
-        airportEmployee.setDesignation(Designation.CARGO_MANAGER);
-        airportEmployee.setEmployeeSalary(65000.0);
-        airportEmployee.printDetails();
-
-        Printer.print("---------------------------");
-        Printer.print("Validating for Airplane Employee");
-        Printer.print("---------------------------");
-        AirplaneEmployee airplaneEmployee = new AirplaneEmployee("Tom", 45, address, Gender.MALE,
-                129, 75000.0, Designation.MANAGER);
-        airplaneEmployee.printDetails();
-
-        Printer.print("---------------------------");
         Printer.print("Runway status");
         Printer.print("---------------------------");
         testRunwayStatus(RunwayStatus.TAKEOFF);
@@ -244,6 +227,7 @@ public class Main {
 
         Printer.print("---------------------------");
         Printer.print("Validating Airport Runway");
+        Printer.print("----------------------------");
         AirportRunway airportRunway = new AirportRunway("4", "Unitedairlines", true);
         airportRunway.printOccupiedStatus();
         airportRunway.printDetails();
@@ -266,7 +250,6 @@ public class Main {
             Printer.print("Adding third luggage ");
             passenger.addLuggage();
             Printer.print("Added third luggage ");
-
         } catch (LimitExceededException l) {
             Printer.error("Luggage Error: " + l.getMessage());
         }
