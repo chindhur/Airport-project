@@ -1,4 +1,4 @@
-package com.src;
+package com;
 
 import com.exception.*;
 import com.airport.*;
