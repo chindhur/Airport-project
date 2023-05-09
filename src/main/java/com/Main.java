@@ -8,6 +8,8 @@ import com.utils.Printer;
 import javax.print.PrintException;
 import com.people.Passenger;
 import com.airport.Airport;
+import com.utils.UniqueWords;
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
@@ -253,6 +255,7 @@ public class Main {
         } catch (LimitExceededException l) {
             Printer.error("Luggage Error: " + l.getMessage());
         }
+
         //Implementing EmployeeIdNotFoundException
         try {
             employee.checkForEmployeeid();
@@ -266,6 +269,16 @@ public class Main {
             ticket2.writeTicketToFile("E:/src/ticket2.txt");
         } catch (PrintException p) {
             Printer.error("Ticket Error :" + p.getMessage());
+        }
+
+        //Writing unique words of a file into another file
+        UniqueWords uniqueWords = new UniqueWords();
+        try {
+            uniqueWords.findUniqueWords();
+            Printer.print("Found unique words of the file and written the unique words on file uniqwords.txt");
+        }
+        catch(IOException ioException){
+            Printer.print("The error is:"+ioException.getMessage());
         }
     }
 
