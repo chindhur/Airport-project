@@ -11,6 +11,7 @@ import com.airport.Airport;
 import com.utils.UniqueWords;
 import java.io.IOException;
 import java.util.*;
+import java.io.File;
 
 public class Main {
 
@@ -256,6 +257,16 @@ public class Main {
             Printer.error("Luggage Error: " + l.getMessage());
         }
 
+        Printer.print("---------------------------");
+        Printer.print("CheckIn Passenger via lambda");
+        Printer.print("---------------------------");
+        airport.checkInPassenger.accept(salFlight,passenger1);
+        airport.checkInPassenger.accept(salFlight,passenger3);
+        airport.checkInPassenger.accept(unitedFlight, passenger2);
+        salFlight.printDetails();
+        Printer.print("Is runway available " +
+                airport.canLandOnRunway.test(airport.getRunway()));
+
         //Implementing EmployeeIdNotFoundException
         try {
             employee.checkForEmployeeid();
@@ -272,13 +283,16 @@ public class Main {
         }
 
         //Writing unique words of a file into another file
+        String inputFile = "Airport-project/src/main/resources/filereader.txt";
+        String outputFile = "Airport-project/src/main/resources/uniqwords.txt";
         UniqueWords uniqueWords = new UniqueWords();
         try {
-            uniqueWords.findUniqueWords();
+            Set<String> wordSet = uniqueWords.findUniqueWords(inputFile);
             Printer.print("Found unique words of the file and written the unique words on file uniqwords.txt");
+            Printer.printFile(outputFile, wordSet);
         }
         catch(IOException ioException){
-            Printer.print("The error is:"+ioException.getMessage());
+            Printer.print("The error reported in finding uniq Words:"+ioException.getMessage());
         }
     }
 
