@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class UniqueWords {
+public class UniqueWordsUtil {
 
         public void findUniqueWords() throws IOException {
 
