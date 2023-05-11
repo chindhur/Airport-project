@@ -9,7 +9,6 @@ import java.util.stream.Stream;
 
 public class UniqueWords {
     public Set<String> findUniqueWords(String inputFile) throws IOException {
-
         //open the file with stream and get all lines
         try (Stream<String> lines = Files.lines(Path.of(inputFile))) {
             //filter each line into words ,splitting by space
