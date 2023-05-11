@@ -8,10 +8,11 @@ import com.utils.Printer;
 import javax.print.PrintException;
 import com.people.Passenger;
 import com.airport.Airport;
+import com.utils.UniqueWords;
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
-
     public static void main(String[] args) {
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
@@ -75,7 +76,6 @@ public class Main {
         menuList.add(new FoodMenu(true, "Veg Burger", 15));
         menuList.add(new FoodMenu(true, "Pizza", 25));
         menuList.add(new FoodMenu(false, "Chicken Burger", 20));
-
         salFlight.setMenuList(menuList);
         for (FoodMenu menu : salFlight.getMenuList()) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
@@ -253,6 +253,7 @@ public class Main {
         } catch (LimitExceededException l) {
             Printer.error("Luggage Error: " + l.getMessage());
         }
+
         //Implementing EmployeeIdNotFoundException
         try {
             employee.checkForEmployeeid();
@@ -266,6 +267,18 @@ public class Main {
             ticket2.writeTicketToFile("E:/src/ticket2.txt");
         } catch (PrintException p) {
             Printer.error("Ticket Error :" + p.getMessage());
+        }
+
+        //Writing unique words of a file into another file
+        String inputFile = "Airport-project/src/main/resources/filereader.txt";
+        String outputFile = "Airport-project/src/main/resources/uniqwords.txt";
+        UniqueWords uniqueWords = new UniqueWords();
+        try {
+            Set<String> wordSet = uniqueWords.findUniqueWords(inputFile);
+            Printer.print("Found unique words of the file and written the unique words on file uniqwords.txt");
+            Printer.printFile(outputFile, wordSet);
+        } catch (IOException ioException) {
+            Printer.print("The error reported in finding uniq Words:" + ioException.getMessage());
         }
     }
 
@@ -307,7 +320,6 @@ public class Main {
             for (FoodMenu menu : menuList) {
                 Printer.print("Item name : " + menu.getItemName() + "--------------" + menu.getItemPrice());
             }
-
         }
     }
 
