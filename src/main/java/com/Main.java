@@ -11,10 +11,8 @@ import com.airport.Airport;
 import com.utils.UniqueWords;
 import java.io.IOException;
 import java.util.*;
-import java.io.File;
 
 public class Main {
-
     public static void main(String[] args) {
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
@@ -78,7 +76,6 @@ public class Main {
         menuList.add(new FoodMenu(true, "Veg Burger", 15));
         menuList.add(new FoodMenu(true, "Pizza", 25));
         menuList.add(new FoodMenu(false, "Chicken Burger", 20));
-
         salFlight.setMenuList(menuList);
         for (FoodMenu menu : salFlight.getMenuList()) {
             Printer.print("Item Name : " + menu.getItemName() + "------------" + menu.getItemPrice());
@@ -257,16 +254,6 @@ public class Main {
             Printer.error("Luggage Error: " + l.getMessage());
         }
 
-        Printer.print("---------------------------");
-        Printer.print("CheckIn Passenger via lambda");
-        Printer.print("---------------------------");
-        airport.checkInPassenger.accept(salFlight,passenger1);
-        airport.checkInPassenger.accept(salFlight,passenger3);
-        airport.checkInPassenger.accept(unitedFlight, passenger2);
-        salFlight.printDetails();
-        Printer.print("Is runway available " +
-                airport.canLandOnRunway.test(airport.getRunway()));
-
         //Implementing EmployeeIdNotFoundException
         try {
             employee.checkForEmployeeid();
@@ -290,9 +277,8 @@ public class Main {
             Set<String> wordSet = uniqueWords.findUniqueWords(inputFile);
             Printer.print("Found unique words of the file and written the unique words on file uniqwords.txt");
             Printer.printFile(outputFile, wordSet);
-        }
-        catch(IOException ioException){
-            Printer.print("The error reported in finding uniq Words:"+ioException.getMessage());
+        } catch (IOException ioException) {
+            Printer.print("The error reported in finding uniq Words:" + ioException.getMessage());
         }
     }
 
@@ -334,7 +320,6 @@ public class Main {
             for (FoodMenu menu : menuList) {
                 Printer.print("Item name : " + menu.getItemName() + "--------------" + menu.getItemPrice());
             }
-
         }
     }
 
