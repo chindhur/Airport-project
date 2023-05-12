@@ -25,13 +25,13 @@ public class Employee extends Person {
     /*method to get employeedetails*/
     public void printDetails() {
         super.printBasicDetails();
-        Printer.print("Name of the employee is :"+name);
+        Printer.print("Name of the employee is :" + name);
         Printer.print("employee id is :" + employeeId);
         Printer.print("Employee salary is :" + employeeSalary);
-        Printer.print("Designation of the employee is:" + designation);
-        Printer.print("Age of the employee is ;"+age);
+        Printer.print("Designation of the employee is:" + designation.getDisplayName());
+        Printer.print("Age of the employee is ;" + age);
         Printer.print("Address :" + super.getAddress());
-        Printer.print("Gender : " + super.getGender());
+        Printer.print("Gender : " + super.getGender().getDisplayName());
     }
 
     public int getEmployeeId() {
@@ -43,12 +43,12 @@ public class Employee extends Person {
     }
 
     public void checkForEmployeeid()
-            throws InvalidEmployeeIdException{
-            if(employeeId < 1 )
-                throw new InvalidEmployeeIdException("EmployeeId is invalid");
-        }
+            throws InvalidEmployeeIdException {
+        if (employeeId < 1)
+            throw new InvalidEmployeeIdException("EmployeeId is invalid");
+    }
 
-        public Double getEmployeeSalary() {
+    public Double getEmployeeSalary() {
         return employeeSalary;
     }
 

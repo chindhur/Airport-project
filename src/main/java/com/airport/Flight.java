@@ -1,8 +1,12 @@
 package com.airport;
 
+import com.people.Passenger;
 import com.utils.Printer;
 import java.sql.Timestamp;
 import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
+
 import com.exception.NoSeatLeftException;
 import com.exception.InvalidArgumentException;
 
@@ -21,6 +25,11 @@ public class Flight {
     private int noOfSeats=50;
     private int noOfSeatsLeft;
     List<FoodMenu> menuList;
+    List<Passenger> checkedInPassengers;
+
+    //Implements Consumer Lambda- notifies boarding of a passenger
+    Consumer<Passenger> notifyBoarding =
+            passenger -> Printer.print(passenger.getName() + " boarded flight");
 
     static {
         Printer.print("Have a Nice and Happy Journey with our Airlines");
@@ -40,6 +49,7 @@ public class Flight {
         this.noOfSeats=noOfSeats;
         this.noOfSeatsLeft = noOfSeatsLeft;
         this.flightName = flightName;
+        checkedInPassengers = new ArrayList<Passenger>();
     }
 
     public final int getNoOfWheels() {
@@ -141,11 +151,17 @@ public class Flight {
         Printer.print("flight name:" + flightName);
         Printer.print("flight source : " + source);
         Printer.print("flight destination : " + destination);
+        checkedInPassengers.forEach(notifyBoarding);//
     }
 
     public void printFlightStatus() {
         Printer.print("arrival time :" + arrivalTime);
         Printer.print("Departure time is :" + departureTime);
+    }
+
+    public void checkInPassenger(Passenger passenger){
+        // Todo: add case for already checked in case
+        checkedInPassengers.add(passenger);
     }
 
     @Override

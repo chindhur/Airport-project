@@ -5,12 +5,17 @@ import com.airport.*;
 import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
+
 import javax.print.PrintException;
+
 import com.people.Passenger;
 import com.airport.Airport;
 import com.utils.UniqueWords;
+
 import java.io.IOException;
 import java.util.*;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
 
 public class Main {
     public static void main(String[] args) {
@@ -280,6 +285,42 @@ public class Main {
         } catch (IOException ioException) {
             Printer.print("The error reported in finding uniq Words:" + ioException.getMessage());
         }
+
+        Printer.print("---------------------------");
+        Printer.print("Using generic Lambda");
+        Printer.print("---------------------------");
+        try {
+            int wordcount = uniqueWords.getWordCount("Airport-project/src/main/resources/filereader.txt",
+                    "enum");
+            Printer.print("count = " + wordcount);
+        } catch (IOException ioException) {
+            Printer.print("Error reported in finding word count of given word" + ioException.getMessage());
+        }
+
+        Printer.print("Using lambda functions from inbuilt package");
+        Printer.print("---------------------------");
+        //Implements Bi-consumer Lambda-to checkin the passengers
+        airport.checkInPassenger.accept(salFlight, passenger1);
+        airport.checkInPassenger.accept(salFlight, passenger3);
+        airport.checkInPassenger.accept(unitedFlight, passenger2);
+        salFlight.printDetails();
+
+        //Implements predicate Lambda-checks runway status
+        Printer.print("Is runway available " +
+                airport.canLandOnRunway.test(airport.getRunway()));
+        airport.setRunway(RunwayStatus.TAKEOFF);
+
+        //Implements function Lambda- gets destination of flight
+        Function<Flight, String> destinationExtractor = Flight::getDestination;
+        Printer.print("Destination of Singapore Airlines flight is :"
+                + destinationExtractor.apply(salFlight));
+
+        // Implements BiPredicate lambda - Checks if two employees are same
+        BiPredicate<AirportEmployee, AirplaneEmployee> isEmployeeSame =
+                (employee1, employee2) ->
+                        employee1.getName().equals(employee2.getName());
+        Printer.print("Checking if employee same :" +
+                isEmployeeSame.test(airportEmployee1, airplaneEmployee1));
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {
@@ -327,15 +368,16 @@ public class Main {
         // tells the runway status by using different cases
         switch (status) {
             case IDLE: // message if runway is idle
-                Printer.print("Nothing is going on the runway!");
+                Printer.print("Status :" + status.getDisplayStatus());
                 break;
-
             case LANDING: // message if a plane is landing
-                Printer.print("A plane is landing!");
+                Printer.print("Status :" + status.getDisplayStatus());
                 break;
-
             case TAKEOFF: // message if a plane is taking off
-                Printer.print("a plane is taking off!");
+                Printer.print("Status :" + status.getDisplayStatus());
+                break;
+            default:
+                Printer.print("Not known");
         }
     }
 }

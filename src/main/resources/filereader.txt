@@ -1,4 +1,5 @@
-An enum type is a special data type that enables for a variable to be a set of predefined constants.
+An enum enum type is a special data type that enables for a variable to be a set of predefined constants.
+Enum is very useful to define custom data type.
 
 
 

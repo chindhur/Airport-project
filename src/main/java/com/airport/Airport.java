@@ -7,28 +7,28 @@ import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.BiConsumer;
+import java.util.function.Predicate;
 
 public class Airport {
+    public Predicate<RunwayStatus> canLandOnRunway = rs -> rs.equals(RunwayStatus.IDLE);
 
+    public BiConsumer<Flight, Passenger> checkInPassenger = (flight, passenger) -> {
+        flight.checkInPassenger(passenger);
+        passenger.setCheckedIn(true);
+        System.out.println("Passenger " + passenger.getName() + " checked in for flight " + flight.getFlightId());
+    };
+    List<Flight> airlinesList;
+    CustomLinkedList<Passenger> passengerList;
     private String airportName;
     private String cityName;
     private String area;
     private Boolean isRunwayOpen = true;
     private RunwayStatus runway = RunwayStatus.IDLE;
-    List<Flight> airlinesList;
-    CustomLinkedList<Passenger> passengerList;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
 
-    public Boolean getRunwayOpen() {
-        return isRunwayOpen;
-    }
-
-    public void setRunwayOpen(Boolean isRunwayOpen) {
-        isRunwayOpen = isRunwayOpen;
-    }
-
-    public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList){
+    public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList) {
         this.airportEmployeeList = airportEmployeeList;
         this.airplaneEmployeeList = airplaneEmployeeList;
         airlinesList = new ArrayList<Flight>();
@@ -50,22 +50,22 @@ public class Airport {
     }
 
     public Flight getAirlines(String flightId) throws NotFoundException {
-        for(int i=0; i<airlinesList.size(); i++) {
+        for (int i = 0; i < airlinesList.size(); i++) {
             Flight flight = airlinesList.get(i);
             if (flight.getFlightId().equals(flightId)) {
                 Printer.debug("Found Airline ID matching :" + flight.getFlightId());
                 return flight;
             }
         }
-        throw new NotFoundException("Error : Flight Identifier "+ flightId + " Not Found!");
+        throw new NotFoundException("Error : Flight Identifier " + flightId + " Not Found!");
     }
 
-    public Passenger getPassenger(String firstName) throws NotFoundException{
+    public Passenger getPassenger(String firstName) throws NotFoundException {
         // loop passengerlist n find passenger;
-        for(int i=0;i< passengerList.size();i++){
+        for (int i = 0; i < passengerList.size(); i++) {
             Passenger passenger = passengerList.get(i);
-            if(passenger.getName().equals(firstName)){
-                Printer.debug("Found passenger name matching:"+passenger.getName());
+            if (passenger.getName().equals(firstName)) {
+                Printer.debug("Found passenger name matching:" + passenger.getName());
                 return passenger;
             }
         }
@@ -73,11 +73,15 @@ public class Airport {
     }
 
     public void addPassenger(Passenger passenger) {
-      passengerList.add(passenger);
+        passengerList.add(passenger);
     }
 
     public RunwayStatus getRunway() {
         return runway;
+    }
+
+    public void setRunway(RunwayStatus runwayIn) {
+        runway = runwayIn;
     }
 
     public List<AirplaneEmployee> getAirplaneEmployeeList() {
@@ -86,10 +90,6 @@ public class Airport {
 
     public void addAirplaneEmployee(AirplaneEmployee airplaneEmployee) {
         airplaneEmployeeList.add(airplaneEmployee);
-    }
-
-    public void setRunway(RunwayStatus runwayIn) {
-        runway = runwayIn;
     }
 
     public Boolean getOpenStatus() {
@@ -103,12 +103,13 @@ public class Airport {
         isRunwayOpen = isOpen;
     }
 
+
     public String printDetails() {
-        String flight =  System.lineSeparator()+
-                        "airportName : " + airportName + System.lineSeparator()+
-                        " cityName :" + cityName + System.lineSeparator()+
-                        " area :" + area +System.lineSeparator()+
-                        " The open status of Airport :" + isRunwayOpen;
+        String flight = System.lineSeparator() +
+                "airportName : " + airportName + System.lineSeparator() +
+                " cityName :" + cityName + System.lineSeparator() +
+                " area :" + area + System.lineSeparator() +
+                " The open status of Airport :" + isRunwayOpen;
         Printer.print(flight);
         return flight;
     }
@@ -157,6 +158,14 @@ public class Airport {
 
     public void setAirportName(String airportName) {
         this.airportName = airportName;
+    }
+
+    public Boolean getRunwayOpen() {
+        return isRunwayOpen;
+    }
+
+    public void setRunwayOpen(Boolean isRunwayOpen) {
+        isRunwayOpen = isRunwayOpen;
     }
 
     @Override
