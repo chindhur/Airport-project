@@ -9,7 +9,7 @@ public enum Designation {
 
     private String displayName;
 
-    public Designation(String displayName) {
+    private Designation(String displayName) {
         this.displayName = displayName;
     }
 

@@ -7,7 +7,7 @@ public enum RunwayStatus {
 
     String displayStatus;
     
-    public RunwayStatus(String displayStatus) {
+    private RunwayStatus(String displayStatus) {
         this.displayStatus = displayStatus;
     }
 

@@ -7,7 +7,7 @@ public enum Gender {
 
     private String displayName;
 
-    public Gender(String displayName) {
+    private Gender(String displayName) {
         this.displayName = displayName;
     }
 
