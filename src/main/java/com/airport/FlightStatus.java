@@ -11,7 +11,7 @@ public enum FlightStatus {
 
     private String displayName;
 
-    FlightStatus(String displayName) {
+    public FlightStatus(String displayName) {
         this.displayName = displayName;
     }
 

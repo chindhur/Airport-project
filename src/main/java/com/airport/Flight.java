@@ -6,47 +6,45 @@ import java.sql.Timestamp;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
-
 import com.exception.NoSeatLeftException;
 import com.exception.InvalidArgumentException;
 
 public class Flight {
 
-    protected String flightId;
-    protected String flightName;
-    private Route route;
     private static int noOfWings;
-    private final int NO_OF_WHEELS = 18;
-    protected String source;
-    protected String destination;
-    protected Double price;
-    private Timestamp arrivalTime;
-    private Timestamp departureTime;
-    private int noOfSeats=50;
-    private int noOfSeatsLeft;
-    List<FoodMenu> menuList;
-    List<Passenger> checkedInPassengers;
-
-    //Implements Consumer Lambda- notifies boarding of a passenger
-    Consumer<Passenger> notifyBoarding =
-            passenger -> Printer.print(passenger.getName() + " boarded flight");
 
     static {
         Printer.print("Have a Nice and Happy Journey with our Airlines");
     }
 
+    private final int NO_OF_WHEELS = 18;
+    protected String flightId;
+    protected String flightName;
+    protected String source;
+    protected String destination;
+    protected Double price;
+    List<FoodMenu> menuList;
+    List<Passenger> checkedInPassengers;
+    //Implements Consumer Lambda- notifies boarding of a passenger
+    Consumer<Passenger> notifyBoarding =
+            passenger -> Printer.print(passenger.getName() + " boarded flight");
+    private Route route;
+    private Timestamp arrivalTime;
+    private Timestamp departureTime;
+    private int noOfSeats = 50;
+    private int noOfSeatsLeft;
+
     /*constructors*/
     public Flight(String flightId, String source, String destination,
-                  int noOfSeats,String flightName)
-            throws InvalidArgumentException
-    {
+                  int noOfSeats, String flightName)
+            throws InvalidArgumentException {
         if (destination.equals(source)) {
             throw new InvalidArgumentException("destination and origin are the same");
         }
-        this.flightId=flightId;
-        this.source=source;
+        this.flightId = flightId;
+        this.source = source;
         this.destination = destination;
-        this.noOfSeats=noOfSeats;
+        this.noOfSeats = noOfSeats;
         this.noOfSeatsLeft = noOfSeatsLeft;
         this.flightName = flightName;
         checkedInPassengers = new ArrayList<Passenger>();
@@ -64,15 +62,15 @@ public class Flight {
         this.menuList = menuList;
     }
 
-    public void printDiscount(){
+    public void printDiscount() {
         Printer.print("OFFERS: Seasonal Offer : 20% of on Menu");
     }
 
-    public  int getSeatCapacity(){
+    public int getSeatCapacity() {
         return noOfSeats;
     }
 
-    public  Double getPrice(){
+    public Double getPrice() {
         return price;
     }
 
@@ -84,10 +82,10 @@ public class Flight {
         this.route = route;
     }
 
-    public int bookASeat() throws NoSeatLeftException{
+    public int bookASeat() throws NoSeatLeftException {
         if (noOfSeatsLeft > 0) {
             noOfSeatsLeft = noOfSeatsLeft - 1;
-            Printer.debug("Ticket booked " + noOfSeatsLeft );
+            Printer.debug("Ticket booked " + noOfSeatsLeft);
             return noOfSeatsLeft;
         }
         throw new NoSeatLeftException(getFlightId() + " : There are no seats left to book");
@@ -159,7 +157,7 @@ public class Flight {
         Printer.print("Departure time is :" + departureTime);
     }
 
-    public void checkInPassenger(Passenger passenger){
+    public void checkInPassenger(Passenger passenger) {
         // Todo: add case for already checked in case
         checkedInPassengers.add(passenger);
     }
@@ -199,10 +197,11 @@ public class Flight {
         hash = 53 * hash + this.flightId.hashCode();
         return hash;
     }
+
     public enum FoodType {
         VEG,
         NONVEG,
         KIDSFOOD
     }
-    }
+}
 

@@ -11,7 +11,7 @@ import java.util.List;
 interface IFindItem<T> {
     // a method that calculates the number of occurrences
     // of a given element in an array of numbers
-    int Search(T item, List<T> items);
+    int search(T item, List<T> items);
 }
 
 public class UniqueWords {
@@ -33,7 +33,7 @@ public class UniqueWords {
                     .map(String::toLowerCase)
                     .collect(Collectors.toList());
             Printer.debug("The words count is :" + words.size());
-            int count = ref.Search(wordToCount, words);
+            int count = ref.search(wordToCount, words);
             return count;
         }
     }
