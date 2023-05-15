@@ -2,6 +2,8 @@ package com.people;
 
 import com.utils.Printer;
 
+import java.util.function.Predicate;
+
 public class Person {
 
     protected String name;

@@ -1,5 +1,6 @@
 package com.utils;
 
+import com.interfaces.IFindItem;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,12 +8,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.List;
-
-interface IFindItem<T> {
-    // a method that calculates the number of occurrences
-    // of a given element in an array of numbers
-    int search(T item, List<T> items);
-}
 
 public class UniqueWords {
     IFindItem<String> ref = (item, items) -> {

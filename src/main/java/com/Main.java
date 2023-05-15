@@ -2,14 +2,16 @@ package com;
 
 import com.exception.*;
 import com.airport.*;
+import com.interfaces.IComparePerson;
+import com.interfaces.IGenericLambda;
 import com.linkedList.CustomLinkedList;
 import com.people.*;
+import com.utils.ComparePerson;
 import com.utils.Printer;
 
 import javax.print.PrintException;
 
-import com.people.Passenger;
-import com.airport.Airport;
+import com.utils.ReverseListLambda;
 import com.utils.UniqueWords;
 
 import java.io.IOException;
@@ -27,6 +29,7 @@ public class Main {
                 "San Francisco", "UnitedStates", true);
         airport.toString();
         airport.printDetails();
+
         Printer.print("---------------------------");
 
         Printer.print("Employee Details");
@@ -321,6 +324,24 @@ public class Main {
                         employee1.getName().equals(employee2.getName());
         Printer.print("Checking if employee same :" +
                 isEmployeeSame.test(airportEmployee1, airplaneEmployee1));
+
+        // Generic lambda #2
+        Printer.print("Validating reverse list");
+        Flight firstFlight = airport.getAirlinesList().get(0);
+        Printer.print("First Flight Before Reverse: " + firstFlight.getFlightName());
+        // Assigning generic lambda
+        IGenericLambda<List> reverseList = new ReverseListLambda();
+        // reversing flight list
+        List<Flight> reversedFlights =
+                reverseList.function(airport.getAirlinesList());
+        Flight lastFlight = reversedFlights.get(reversedFlights.size()-1);
+        Printer.print("Last Flight After Reverse : " + lastFlight.getFlightName());
+
+        //Generic lambda #3
+        IComparePerson comparePerson = new ComparePerson();
+        Boolean result = comparePerson.compare(passenger1, passenger4);
+        Printer.print("Comparing Passengers 1 & 4 : " + result);
+
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {

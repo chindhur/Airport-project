@@ -3,6 +3,7 @@ package com.airport;
 import com.exception.NotFoundException;
 import com.linkedList.CustomLinkedList;
 import com.people.Passenger;
+import com.people.Person;
 import com.utils.Printer;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -47,6 +48,10 @@ public class Airport {
 
     public void setAirlinesList(Flight flight) {
         airlinesList.add(flight);
+    }
+
+    public List<Flight> getAirlinesList() {
+        return airlinesList;
     }
 
     public Flight getAirlines(String flightId) throws NotFoundException {
