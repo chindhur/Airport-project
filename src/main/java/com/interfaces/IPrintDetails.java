@@ -2,5 +2,5 @@ package com.interfaces;
 
 @FunctionalInterface
 public interface IPrintDetails<T> {
-        void print(T t);
+    void print(T t);
 }
