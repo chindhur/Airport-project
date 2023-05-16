@@ -2,15 +2,20 @@ package com;
 
 import com.exception.*;
 import com.airport.*;
+import com.interfaces.IPrintDetails;
+import com.interfaces.IFilterDetails;
 import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
-import com.people.Passenger;
-import com.airport.Airport;
 import com.utils.UniqueWords;
+import java.awt.*;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
+import java.util.function.BiPredicate;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,6 +27,7 @@ public class Main {
                 "San Francisco", "UnitedStates", true);
         airport.toString();
         airport.printDetails();
+
         Printer.print("---------------------------");
 
         Printer.print("Employee Details");
@@ -39,7 +45,11 @@ public class Main {
                         "95612", "United States"),
                 Gender.FEMALE, 345, 56000.0, Designation.MANAGER);
         airportEmployee1.printDetails();
-
+        airport.addAirportEmployee(airportEmployee1);
+        airport.addAirportEmployee(new AirportEmployee("Venba", 25,
+                new Address("alps drive", "Cupertino", "california",
+                        "95014", "United States"),
+                Gender.FEMALE, 145, 46000.0, Designation.CUSTOMERCARE));
         Printer.print("---------------------------");
         Printer.print("Validating Airplane Employee");
         Printer.print("-----------------------------");
@@ -61,10 +71,14 @@ public class Main {
         Flight emiratesFlight = null;
         Flight southwestFlight = null;
         try {
-            salFlight = new Flight("SA-AL", "Bangalore", "SFO", 70, "SingaporeAirlines");
-            unitedFlight = new Flight("UN-AL", "Tokyo", "UAE", 0, "UnitedAirlines");
-            emiratesFlight = new Flight("EM-AL", "NewYork", "Singapore", 67, "SingaporeAirlines");
-            southwestFlight = new Flight("SW-AL", "KL", "Indonesia", 45, "SouthwestAirlines");
+            salFlight = new Flight("SA-AL", "Bangalore",
+                    "SFO", 70, "SingaporeAirlines", 1200.0);
+            unitedFlight = new Flight("UN-AL", "Tokyo",
+                    "UAE", 0, "UnitedAirlines", 900.0);
+            emiratesFlight = new Flight("EM-AL", "NewYork",
+                    "Singapore", 67, "EmiratesAirlines", 1300.0);
+            southwestFlight = new Flight("SW-AL", "KL",
+                    "Indonesia", 45, "SouthwestAirlines", 1500.0);
         } catch (InvalidArgumentException i) {
             Printer.error("Flight Error : " + i.getMessage());
         }
@@ -280,6 +294,53 @@ public class Main {
         } catch (IOException ioException) {
             Printer.print("The error reported in finding uniq Words:" + ioException.getMessage());
         }
+
+        Printer.print("---------------------------");
+        Printer.print("Using generic Lambda");
+        Printer.print("---------------------------");
+        try {
+            int wordcount = uniqueWords.getWordCount("Airport-project/src/main/resources/filereader.txt",
+                    "enum");
+            Printer.print("count = " + wordcount);
+        } catch (IOException ioException) {
+            Printer.print("Error reported in finding word count of given word" + ioException.getMessage());
+        }
+
+        Printer.print("Using lambda functions from inbuilt package");
+        Printer.print("---------------------------");
+        //Implements Bi-consumer Lambda-to checkin the passengers
+        airport.checkInPassenger.accept(salFlight, passenger1);
+        airport.checkInPassenger.accept(salFlight, passenger3);
+        airport.checkInPassenger.accept(unitedFlight, passenger2);
+        salFlight.printDetails();
+
+        //Implements predicate Lambda-checks runway status
+        Printer.print("Is runway available " +
+                airport.isRunwayAvailable());
+        airport.setRunway(RunwayStatus.TAKEOFF);
+
+        //Implements function Lambda- gets destination of flight
+        Function<Flight, String> destinationExtractor = Flight::getDestination;
+        Printer.print("Destination of Singapore Airlines flight is :"
+                + destinationExtractor.apply(salFlight));
+
+        // Implements BiPredicate lambda - Checks if two employees are same
+        BiPredicate<AirportEmployee, AirplaneEmployee> isEmployeeSame =
+                (employee1, employee2) ->
+                        employee1.getName().equals(employee2.getName());
+        Printer.print("Checking if employee same :" +
+                isEmployeeSame.test(airportEmployee1, airplaneEmployee1));
+
+        //Generic lambda #2
+        IPrintDetails<Ticket> ipt = (t) -> {
+            Printer.print(t.toString());
+        };
+        ipt.print(ticket3);
+        ipt.print(ticket1);
+
+        //Generic Lambda #3
+        IFilterDetails<Employee> searchBySalary = employee2 -> employee2.getEmployeeSalary() > 0;
+        Printer.print("Employee search by salary :" + airport.getEmployees(searchBySalary));
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {
@@ -327,15 +388,16 @@ public class Main {
         // tells the runway status by using different cases
         switch (status) {
             case IDLE: // message if runway is idle
-                Printer.print("Nothing is going on the runway!");
+                Printer.print("Status :" + status.getDisplayStatus());
                 break;
-
             case LANDING: // message if a plane is landing
-                Printer.print("A plane is landing!");
+                Printer.print("Status :" + status.getDisplayStatus());
                 break;
-
             case TAKEOFF: // message if a plane is taking off
-                Printer.print("a plane is taking off!");
+                Printer.print("Status :" + status.getDisplayStatus());
+                break;
+            default:
+                Printer.print("Not known");
         }
     }
 }
