@@ -11,23 +11,19 @@ import com.exception.InvalidArgumentException;
 
 public class Flight {
 
-    private static int noOfWings;
-
     static {
         Printer.print("Have a Nice and Happy Journey with our Airlines");
     }
 
+    private static int noOfWings;
     private final int NO_OF_WHEELS = 18;
     protected String flightId;
     protected String flightName;
     protected String source;
     protected String destination;
-    protected Double price;
+    protected Double price = 0.0;
     List<FoodMenu> menuList;
     List<Passenger> checkedInPassengers;
-    //Implements Consumer Lambda- notifies boarding of a passenger
-    Consumer<Passenger> notifyBoarding =
-            passenger -> Printer.print(passenger.getName() + " boarded flight");
     private Route route;
     private Timestamp arrivalTime;
     private Timestamp departureTime;
@@ -36,7 +32,7 @@ public class Flight {
 
     /*constructors*/
     public Flight(String flightId, String source, String destination,
-                  int noOfSeats, String flightName)
+                  int noOfSeats, String flightName, Double price)
             throws InvalidArgumentException {
         if (destination.equals(source)) {
             throw new InvalidArgumentException("destination and origin are the same");
@@ -48,6 +44,7 @@ public class Flight {
         this.noOfSeatsLeft = noOfSeatsLeft;
         this.flightName = flightName;
         checkedInPassengers = new ArrayList<Passenger>();
+        this.price = price;
     }
 
     public final int getNoOfWheels() {
@@ -149,7 +146,6 @@ public class Flight {
         Printer.print("flight name:" + flightName);
         Printer.print("flight source : " + source);
         Printer.print("flight destination : " + destination);
-        checkedInPassengers.forEach(notifyBoarding);//
     }
 
     public void printFlightStatus() {

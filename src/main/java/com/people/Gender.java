@@ -14,17 +14,5 @@ public enum Gender {
     public String getDisplayName() {
         return displayName;
     }
-
-    public boolean isMale() {
-        return this == MALE;
-    }
-
-    public boolean isFemale() {
-        return this == FEMALE;
-    }
-
-    public boolean isOther() {
-        return this == OTHER;
-    }
 }
 

@@ -14,17 +14,5 @@ public enum RunwayStatus {
     public String getDisplayStatus() {
         return displayStatus;
     }
-
-    public boolean isIdle() {
-        return this == IDLE;
-    }
-
-    public boolean isTakeOff() {
-        return this == TAKEOFF;
-    }
-
-    public boolean isLanding() {
-        return this == LANDING;
-    }
 }
 
