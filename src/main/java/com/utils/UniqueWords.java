@@ -19,6 +19,7 @@ public class UniqueWords {
         return count;
     };
 
+    //Stream #1
     public int getWordCount(String inputFile, String wordToCount) throws IOException {
         //open the file with stream and get all lines
         try (Stream<String> lines = Files.lines(Path.of(inputFile))) {
@@ -33,6 +34,7 @@ public class UniqueWords {
         }
     }
 
+    //Stream #2
     public Set<String> findUniqueWords(String inputFile) throws IOException {
         //open the file with stream and get all lines
         try (Stream<String> lines = Files.lines(Path.of(inputFile))) {
