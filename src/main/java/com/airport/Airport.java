@@ -14,12 +14,6 @@ import java.util.stream.Collectors;
 
 public class Airport {
 
-    public BiConsumer<Flight, Passenger> checkInPassenger = (flight, passenger) -> {
-        flight.checkInPassenger(passenger);
-        passenger.setCheckedIn(true);
-        System.out.println("Passenger " + passenger.getName() + " checked in for flight " + flight.getFlightId());
-    };
-
     List<Flight> airlinesList;
     CustomLinkedList<Passenger> passengerList;
     private String airportName;
@@ -47,6 +41,12 @@ public class Airport {
         airlinesList = new ArrayList<Flight>();
         passengerList = new CustomLinkedList<Passenger>();
     }
+
+    public BiConsumer<Flight, Passenger> checkInPassenger = (flight, passenger) -> {
+        flight.checkInPassenger(passenger);
+        passenger.setCheckedIn(true);
+        System.out.println("Passenger " + passenger.getName() + " checked in for flight " + flight.getFlightId());
+    };
 
     public List<Flight> getAirlinesList() {
         return airlinesList;
@@ -177,7 +177,6 @@ public class Airport {
         }
         return result;
     }
-
 
     public String getAirportName() {
         return airportName;
