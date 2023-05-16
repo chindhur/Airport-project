@@ -8,12 +8,14 @@ import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
-
 import com.utils.UniqueWords;
+import java.awt.*;
 import java.io.IOException;
 import java.util.*;
+import java.util.List;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,10 +71,14 @@ public class Main {
         Flight emiratesFlight = null;
         Flight southwestFlight = null;
         try {
-            salFlight = new Flight("SA-AL", "Bangalore", "SFO", 70, "SingaporeAirlines");
-            unitedFlight = new Flight("UN-AL", "Tokyo", "UAE", 0, "UnitedAirlines");
-            emiratesFlight = new Flight("EM-AL", "NewYork", "Singapore", 67, "SingaporeAirlines");
-            southwestFlight = new Flight("SW-AL", "KL", "Indonesia", 45, "SouthwestAirlines");
+            salFlight = new Flight("SA-AL", "Bangalore",
+                    "SFO", 70, "SingaporeAirlines", 1200.0);
+            unitedFlight = new Flight("UN-AL", "Tokyo",
+                    "UAE", 0, "UnitedAirlines", 900.0);
+            emiratesFlight = new Flight("EM-AL", "NewYork",
+                    "Singapore", 67, "EmiratesAirlines", 1300.0);
+            southwestFlight = new Flight("SW-AL", "KL",
+                    "Indonesia", 45, "SouthwestAirlines", 1500.0);
         } catch (InvalidArgumentException i) {
             Printer.error("Flight Error : " + i.getMessage());
         }
@@ -310,7 +316,7 @@ public class Main {
 
         //Implements predicate Lambda-checks runway status
         Printer.print("Is runway available " +
-                airport.canLandOnRunway.test(airport.getRunway()));
+                airport.isRunwayAvailable());
         airport.setRunway(RunwayStatus.TAKEOFF);
 
         //Implements function Lambda- gets destination of flight

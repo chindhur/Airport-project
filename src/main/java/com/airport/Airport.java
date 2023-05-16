@@ -10,15 +10,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Airport {
-    public Predicate<RunwayStatus> canLandOnRunway = rs -> rs.equals(RunwayStatus.IDLE);
 
     public BiConsumer<Flight, Passenger> checkInPassenger = (flight, passenger) -> {
         flight.checkInPassenger(passenger);
         passenger.setCheckedIn(true);
         System.out.println("Passenger " + passenger.getName() + " checked in for flight " + flight.getFlightId());
     };
+
     List<Flight> airlinesList;
     CustomLinkedList<Passenger> passengerList;
     private String airportName;
@@ -28,6 +29,7 @@ public class Airport {
     private RunwayStatus runway = RunwayStatus.IDLE;
     private List<AirportEmployee> airportEmployeeList = new ArrayList<AirportEmployee>();
     private List<AirplaneEmployee> airplaneEmployeeList = new ArrayList<AirplaneEmployee>();
+    private Predicate<RunwayStatus> canLandOnRunway = rs -> rs.equals(RunwayStatus.IDLE);
 
     public Airport(List<AirportEmployee> airportEmployeeList, List<AirplaneEmployee> airplaneEmployeeList) {
         this.airportEmployeeList = airportEmployeeList;
@@ -46,12 +48,12 @@ public class Airport {
         passengerList = new CustomLinkedList<Passenger>();
     }
 
-    public void setAirlinesList(Flight flight) {
-        airlinesList.add(flight);
-    }
-
     public List<Flight> getAirlinesList() {
         return airlinesList;
+    }
+
+    public void setAirlinesList(Flight flight) {
+        airlinesList.add(flight);
     }
 
     public Flight getAirlines(String flightId) throws NotFoundException {
@@ -108,6 +110,11 @@ public class Airport {
         isRunwayOpen = isOpen;
     }
 
+    public List<AirportEmployee> findEmployeeByCity(List<AirportEmployee> eList, String city) {
+        return eList.stream()
+                .filter(t -> t.getAddress().getCity().equalsIgnoreCase(city))
+                .collect(Collectors.toList());
+    }
 
     public String printDetails() {
         String flight = System.lineSeparator() +
@@ -143,6 +150,10 @@ public class Airport {
         this.area = area;
     }
 
+    public boolean isRunwayAvailable(){
+        return canLandOnRunway.test(this.getRunway()));
+    }
+
     @Override
     public String toString() {
         return "Airport{" +
@@ -157,10 +168,10 @@ public class Airport {
                 '}';
     }
 
-    public List<Employee> getEmployees(IFilterDetails<Employee> fSearch){
+    public List<Employee> getEmployees(IFilterDetails<Employee> fSearch) {
         List<Employee> result = new ArrayList<>();
         for (Employee employee : this.airportEmployeeList) {
-            if (fSearch.filter(employee)){
+            if (fSearch.filter(employee)) {
                 result.add(employee);
             }
         }
