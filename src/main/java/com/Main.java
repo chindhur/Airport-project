@@ -2,18 +2,14 @@ package com;
 
 import com.exception.*;
 import com.airport.*;
-import com.interfaces.IComparePerson;
-import com.interfaces.IGenericLambda;
+import com.interfaces.IPrintDetails;
+import com.interfaces.IFilterDetails;
 import com.linkedList.CustomLinkedList;
 import com.people.*;
-import com.utils.ComparePerson;
 import com.utils.Printer;
-
 import javax.print.PrintException;
 
-import com.utils.ReverseListLambda;
 import com.utils.UniqueWords;
-
 import java.io.IOException;
 import java.util.*;
 import java.util.function.BiPredicate;
@@ -47,7 +43,11 @@ public class Main {
                         "95612", "United States"),
                 Gender.FEMALE, 345, 56000.0, Designation.MANAGER);
         airportEmployee1.printDetails();
-
+        airport.addAirportEmployee(airportEmployee1);
+        airport.addAirportEmployee(new AirportEmployee("Venba", 25,
+                new Address("alps drive", "Cupertino", "california",
+                        "95014", "United States"),
+                Gender.FEMALE, 145, 46000.0, Designation.CUSTOMERCARE));
         Printer.print("---------------------------");
         Printer.print("Validating Airplane Employee");
         Printer.print("-----------------------------");
@@ -325,23 +325,16 @@ public class Main {
         Printer.print("Checking if employee same :" +
                 isEmployeeSame.test(airportEmployee1, airplaneEmployee1));
 
-        // Generic lambda #2
-        Printer.print("Validating reverse list");
-        Flight firstFlight = airport.getAirlinesList().get(0);
-        Printer.print("First Flight Before Reverse: " + firstFlight.getFlightName());
-        // Assigning generic lambda
-        IGenericLambda<List> reverseList = new ReverseListLambda();
-        // reversing flight list
-        List<Flight> reversedFlights =
-                reverseList.function(airport.getAirlinesList());
-        Flight lastFlight = reversedFlights.get(reversedFlights.size()-1);
-        Printer.print("Last Flight After Reverse : " + lastFlight.getFlightName());
+        //Generic lambda #2
+        IPrintDetails<Ticket> ipt = (t) -> {
+            Printer.print(t.toString());
+        };
+        ipt.print(ticket3);
+        ipt.print(ticket1);
 
-        //Generic lambda #3
-        IComparePerson comparePerson = new ComparePerson();
-        Boolean result = comparePerson.compare(passenger1, passenger4);
-        Printer.print("Comparing Passengers 1 & 4 : " + result);
-
+        //Generic Lambda #3
+        IFilterDetails<Employee> searchBySalary = employee2 -> employee2.getEmployeeSalary() > 0;
+        Printer.print("Employee search by salary :" + airport.getEmployees(searchBySalary));
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {

@@ -1,12 +1,12 @@
 package com.airport;
 
 import com.exception.NotFoundException;
+import com.interfaces.IFilterDetails;
 import com.linkedList.CustomLinkedList;
+import com.people.Employee;
 import com.people.Passenger;
-import com.people.Person;
 import com.utils.Printer;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Predicate;
@@ -156,6 +156,17 @@ public class Airport {
                 ", airplaneEmployeeList=" + airplaneEmployeeList +
                 '}';
     }
+
+    public List<Employee> getEmployees(IFilterDetails<Employee> fSearch){
+        List<Employee> result = new ArrayList<>();
+        for (Employee employee : this.airportEmployeeList) {
+            if (fSearch.filter(employee)){
+                result.add(employee);
+            }
+        }
+        return result;
+    }
+
 
     public String getAirportName() {
         return airportName;
