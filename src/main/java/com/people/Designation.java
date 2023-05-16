@@ -17,23 +17,4 @@ public enum Designation {
         return displayName;
     }
 
-    public boolean isManager() {
-        return this == MANAGER;
-    }
-
-    public boolean isPilot() {
-        return this == PILOT;
-    }
-
-    public boolean isAirhostess() {
-        return this == AIRHOSTESS;
-    }
-
-    public boolean isCargoManager() {
-        return this == CARGO_MANAGER;
-    }
-
-    public boolean isCustomerCare() {
-        return this == CUSTOMERCARE;
-    }
 }
