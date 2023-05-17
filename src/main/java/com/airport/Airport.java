@@ -151,7 +151,7 @@ public class Airport {
     }
 
     public boolean isRunwayAvailable(){
-        return canLandOnRunway.test(this.getRunway()));
+        return canLandOnRunway.test(this.getRunway());
     }
 
     @Override

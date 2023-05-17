@@ -8,9 +8,12 @@ import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
+
+import com.utils.Reflection;
 import com.utils.UniqueWords;
 import java.awt.*;
 import java.io.IOException;
+import java.sql.Ref;
 import java.util.*;
 import java.util.List;
 import java.util.function.BiPredicate;
@@ -18,7 +21,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
         Printer.print("---------------------------");
@@ -376,8 +379,14 @@ public class Main {
                         .distinct()
                         .collect(Collectors.toList());
         Printer.print("Food Menu with veg option : " + vegMenu );
+
+        // Using reflection to
+        // extract information(modifiers, return types, parameters, etc) about fields, constructors, methods.
+        Reflection.printClassDetails("com.people.Employee");
+        // Invoking getName() and getAge() on AirplaneEmployee class
+        // using reflection
+        Reflection.printEmployeeValues(airplaneEmployee1, new String[]{"Name", "Age"});
     }
-}
 
     public static void checkAirport(Airport airport) throws NotFoundException {
         Scanner sc = new Scanner(System.in);
@@ -393,7 +402,7 @@ public class Main {
 
     public static void checkAirlines(Airport airport) throws NotFoundException {
         Scanner sc = new Scanner(System.in);
-        Printer.print("Please enter the airline flight identifier for searching food menu: ");
+        Printer.print("Please enter the airline fliAght identifier for searching food menu: ");
         String name = sc.nextLine();
         Printer.print("searching airline:" + name);
         if (airport.getAirlines(name) != null) {
