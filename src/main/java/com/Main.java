@@ -8,9 +8,12 @@ import com.linkedList.CustomLinkedList;
 import com.people.*;
 import com.utils.Printer;
 import javax.print.PrintException;
+
+import com.utils.Reflection;
 import com.utils.UniqueWords;
 import java.awt.*;
 import java.io.IOException;
+import java.sql.Ref;
 import java.util.*;
 import java.util.List;
 import java.util.function.BiPredicate;
@@ -18,7 +21,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException {
         Printer.print("---------------------------");
         Printer.print("Project AIRPORT");
         Printer.print("---------------------------");
@@ -341,6 +344,48 @@ public class Main {
         //Generic Lambda #3
         IFilterDetails<Employee> searchBySalary = employee2 -> employee2.getEmployeeSalary() > 0;
         Printer.print("Employee search by salary :" + airport.getEmployees(searchBySalary));
+
+        //Stream #3 Finds employee based of Fremont City - with non-terminal and terminal
+        Printer.print("employees in fremont city " +
+                airport.findEmployeeByCity(airport.getAirportEmployeeList(), "fremont"));
+
+        //Stream#4 Finds flight that starts at SFO with terminal operation alone
+        List<Flight> filghtList = airport.getAirlinesList();
+        Boolean isFlightToSFO =
+                filghtList.stream()
+                        .anyMatch(f -> f.getSource().equalsIgnoreCase("SFO"));
+        Printer.print("Flight to SFO found : " + isFlightToSFO);
+
+        //Stream5 : stream with filter and count (terminal)
+        long count =
+                filghtList.stream()
+                        .filter(f-> f.getPrice() > 1000)
+                        .count();
+        Printer.print("Flight with over 1000$ ticket price : " + count);
+
+        // Stream 6 : Sort flight
+        List<Flight> sortedList =
+                filghtList.stream()
+                        .distinct()
+                        .sorted((f1, f2) -> f1.getPrice().compareTo(f2.getPrice()))
+                        .collect(Collectors.toList());
+        Printer.print("Sorted Flight list : " + sortedList);
+
+        //Stream 7: Filter veg menu alone from food list
+        List<String> vegMenu =
+                menuList.stream()
+                        .filter(m -> m.getVeg())
+                        .map(menu -> menu.getItemName())
+                        .distinct()
+                        .collect(Collectors.toList());
+        Printer.print("Food Menu with veg option : " + vegMenu );
+
+        // Using reflection to
+        // extract information(modifiers, return types, parameters, etc) about fields, constructors, methods.
+        Reflection.printClassDetails("com.people.Employee");
+        // Invoking getName() and getAge() on AirplaneEmployee class
+        // using reflection
+        Reflection.printEmployeeValues(airplaneEmployee1, new String[]{"Name", "Age"});
     }
 
     public static void checkAirport(Airport airport) throws NotFoundException {
@@ -357,7 +402,7 @@ public class Main {
 
     public static void checkAirlines(Airport airport) throws NotFoundException {
         Scanner sc = new Scanner(System.in);
-        Printer.print("Please enter the airline flight identifier for searching food menu: ");
+        Printer.print("Please enter the airline fliAght identifier for searching food menu: ");
         String name = sc.nextLine();
         Printer.print("searching airline:" + name);
         if (airport.getAirlines(name) != null) {
